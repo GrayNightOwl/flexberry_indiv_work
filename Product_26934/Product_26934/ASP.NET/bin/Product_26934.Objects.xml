@@ -1,0 +1,1413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product_26934.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Product_26934.РабочийПериод">
+            <summary>
+            Рабочий период.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.ДатаПриёма">
+            <summary>
+            ДатаПриёма.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.ДатаУвольнения">
+            <summary>
+            ДатаУвольнения.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.ИсторияДолжностей">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_26934.Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.РабочийПериод.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.v05_РабочийПериодE">
+            <summary>
+            "v0.5_РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.v2_РабочийПериодE">
+            <summary>
+            "v2_РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.v3_РабочийПериодE">
+            <summary>
+            "v3_РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.v4_РабочийПериодE">
+            <summary>
+            "v4_РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.v5_РабочийПериодE">
+            <summary>
+            "v5_РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.РабочийПериод.Views.РабочийПериодE">
+            <summary>
+            "РабочийПериодE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.РабочийПериод.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.РабочийПериод.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.DetailArrayOfРабочийПериод">
+            <summary>
+            Detail array of РабочийПериод.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_26934.DetailArrayOfРабочийПериод.#ctor(IIS.Product_26934.Сотрудник)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type РабочийПериод by index.
+            </summary>
+            <summary>
+            Adds object with type РабочийПериод.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Проект">
+            <summary>
+            Проект.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Название">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Заказчик">
+            <summary>
+            Заказчик.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Описание">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Обязанности">
+            <summary>
+            Обязанности.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Стоимость">
+            <summary>
+            Стоимость.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.СрокНачала">
+            <summary>
+            СрокНачала.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.СрокЗавершения">
+            <summary>
+            СрокЗавершения.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Руководитель">
+            <summary>
+            Проект.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Проект.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v05_ПроектE">
+            <summary>
+            "v0.5_ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v05_ПроектL">
+            <summary>
+            "v0.5_ПроектL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v2_ПроектE">
+            <summary>
+            "v2_ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v2_ПроектL">
+            <summary>
+            "v2_ПроектL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v3_ПроектE">
+            <summary>
+            "v3_ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v3_ПроектL">
+            <summary>
+            "v3_ПроектL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v4_ПроектE">
+            <summary>
+            "v4_ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v4_ПроектL">
+            <summary>
+            "v4_ПроектL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v5_ПроектE">
+            <summary>
+            "v5_ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.v5_ПроектL">
+            <summary>
+            "v5_ПроектL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.ПроектE">
+            <summary>
+            "ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Проект.Views.ПроектL">
+            <summary>
+            "ПроектL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Проект.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Проект.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СотрудникПроект">
+            <summary>
+            Сотрудник проект.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.ДатаПодключения">
+            <summary>
+            ДатаПодключения.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.ДатаВыхода">
+            <summary>
+            ДатаВыхода.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.РольВПроекте">
+            <summary>
+            РольВПроекте.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Примечания">
+            <summary>
+            Примечания.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Проект">
+            <summary>
+            Сотрудник проект.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.ПроектыСотрудника">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_26934.Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СотрудникПроект.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v05_СотрудникПроектE">
+            <summary>
+            "v0.5_СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v2_СотрудникПроектE">
+            <summary>
+            "v2_СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v3_СотрудникПроектE">
+            <summary>
+            "v3_СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v4_СотрудникПроектE">
+            <summary>
+            "v4_СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v5_СотрудникПроектE">
+            <summary>
+            "v5_СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СотрудникПроект.Views.СотрудникПроектE">
+            <summary>
+            "СотрудникПроектE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СотрудникПроект.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СотрудникПроект.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.DetailArrayOfСотрудникПроект">
+            <summary>
+            Detail array of СотрудникПроект.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_26934.DetailArrayOfСотрудникПроект.#ctor(IIS.Product_26934.Сотрудник)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type СотрудникПроект by index.
+            </summary>
+            <summary>
+            Adds object with type СотрудникПроект.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Сотрудник">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ФИО">
+            <summary>
+            ФИО.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ДатаРождения">
+            <summary>
+            ДатаРождения.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Паспорт">
+            <summary>
+            Паспорт.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Адрес">
+            <summary>
+            Адрес.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.СписокАттестаций">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.РабочийПериод">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ИсторияРуководителей">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ИсторияОкладов">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.СотрудникПроект">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Сотрудник.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v05_СотрудникE">
+            <summary>
+            "v0.5_СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v05_СотрудникL">
+            <summary>
+            "v0.5_СотрудникL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v2_СотрудникE">
+            <summary>
+            "v2_СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v2_СотрудникL">
+            <summary>
+            "v2_СотрудникL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v3_СотрудникE">
+            <summary>
+            "v3_СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v3_СотрудникL">
+            <summary>
+            "v3_СотрудникL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v4_СотрудникE">
+            <summary>
+            "v4_СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v4_СотрудникL">
+            <summary>
+            "v4_СотрудникL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v5_СотрудникE">
+            <summary>
+            "v5_СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.v5_СотрудникL">
+            <summary>
+            "v5_СотрудникL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.СотрудникE">
+            <summary>
+            "СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Views.СотрудникL">
+            <summary>
+            "СотрудникL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.Сотрудник.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.Сотрудник.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияОкладов">
+            <summary>
+            История окладов.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.НачальнаяДата">
+            <summary>
+            НачальнаяДата.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.КонечнаяДата">
+            <summary>
+            КонечнаяДата.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Оклад">
+            <summary>
+            Оклад.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Сотрудник">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_26934.Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияОкладов.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.v2_ИсторияОкладовE">
+            <summary>
+            "v2_ИсторияОкладовE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.v3_ИсторияОкладовE">
+            <summary>
+            "v3_ИсторияОкладовE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.ИсторияОкладовE">
+            <summary>
+            "ИсторияОкладовE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияОкладов.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияОкладов.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.DetailArrayOfИсторияОкладов">
+            <summary>
+            Detail array of ИсторияОкладов.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_26934.DetailArrayOfИсторияОкладов.#ctor(IIS.Product_26934.Сотрудник)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type ИсторияОкладов by index.
+            </summary>
+            <summary>
+            Adds object with type ИсторияОкладов.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияРуководителей">
+            <summary>
+            История руководителей.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.НачальнаяДата">
+            <summary>
+            НачальнаяДата.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.КонечнаяДата">
+            <summary>
+            КонечнаяДата.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Руководитель">
+            <summary>
+            История руководителей.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.ИсторияСотрудника">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_26934.Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияРуководителей.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v05_ИсторияРуководителейE">
+            <summary>
+            "v0.5_ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v2_ИсторияРуководителейE">
+            <summary>
+            "v2_ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v3_ИсторияРуководителейE">
+            <summary>
+            "v3_ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v4_ИсторияРуководителейE">
+            <summary>
+            "v4_ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v5_ИсторияРуководителейE">
+            <summary>
+            "v5_ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.ИсторияРуководителейE">
+            <summary>
+            "ИсторияРуководителейE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.ИсторияРуководителей.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.ИсторияРуководителей.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.DetailArrayOfИсторияРуководителей">
+            <summary>
+            Detail array of ИсторияРуководителей.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_26934.DetailArrayOfИсторияРуководителей.#ctor(IIS.Product_26934.Сотрудник)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type ИсторияРуководителей by index.
+            </summary>
+            <summary>
+            Adds object with type ИсторияРуководителей.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СписокАттестаций">
+            <summary>
+            Список аттестаций.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Название">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.ДатаПроведения">
+            <summary>
+            ДатаПроведения.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Сотрудник">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_26934.Сотрудник.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СписокАттестаций.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v05_СписокАттестацийE">
+            <summary>
+            "v0.5_СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v2_СписокАттестацийE">
+            <summary>
+            "v2_СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v3_СписокАттестацийE">
+            <summary>
+            "v3_СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v4_СписокАттестацийE">
+            <summary>
+            "v4_СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v5_СписокАттестацийE">
+            <summary>
+            "v5_СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.СписокАттестаций.Views.СписокАттестацийE">
+            <summary>
+            "СписокАттестацийE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.СписокАттестаций.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.Product_26934.СписокАттестаций.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.DetailArrayOfСписокАттестаций">
+            <summary>
+            Detail array of СписокАттестаций.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_26934.DetailArrayOfСписокАттестаций.#ctor(IIS.Product_26934.Сотрудник)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type СписокАттестаций by index.
+            </summary>
+            <summary>
+            Adds object with type СписокАттестаций.
+            </summary>
+        </member>
+    </members>
+</doc>
