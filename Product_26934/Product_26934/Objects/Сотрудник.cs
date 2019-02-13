@@ -703,7 +703,6 @@ namespace IIS.Product_26934
         public virtual void УволитьСотрудника()
         {
             // *** Start programmer edit section *** (Сотрудник.УволитьСотрудника method implementation)
-
             return;
             // *** End programmer edit section *** (Сотрудник.УволитьСотрудника method implementation)
         }
@@ -715,7 +714,6 @@ namespace IIS.Product_26934
         public virtual void СформироватьОтчёт()
         {
             // *** Start programmer edit section *** (Сотрудник.СформироватьОтчёт method implementation)
-
             return;
             // *** End programmer edit section *** (Сотрудник.СформироватьОтчёт method implementation)
         }

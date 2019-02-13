@@ -12,6 +12,7 @@ namespace IIS.Product_26934
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET.Business;
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Business.Audit;
     using ICSSoft.STORMNET.Business.Audit.Objects;
@@ -28,6 +29,7 @@ namespace IIS.Product_26934
     // *** Start programmer edit section *** (РабочийПериод CustomAttributes)
 
     // *** End programmer edit section *** (РабочийПериод CustomAttributes)
+    [BusinessServer("IIS.Product_26934.РабочийПериодБС, Product_26934.BusinessServers", ICSSoft.STORMNET.Business.DataServiceObjectEvents.OnAllEvents)]
     [AutoAltered()]
     [Caption("Рабочий период")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]

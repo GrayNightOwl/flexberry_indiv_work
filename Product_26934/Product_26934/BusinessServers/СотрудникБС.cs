@@ -12,10 +12,9 @@ namespace IIS.Product_26934
 {
     using System;
     using System.Xml;
-
-
+    
+    
     // *** Start programmer edit section *** (Using statements)
-
     using System.Linq;
     using ICSSoft.STORMNET.Business.LINQProvider;
     using ICSSoft.STORMNET.Business;
@@ -43,7 +42,6 @@ namespace IIS.Product_26934
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.Product_26934.Сотрудник UpdatedObject)
         {
             // *** Start programmer edit section *** (OnUpdateСотрудник)
-
             var ds = (SQLDataService)DataServiceProvider.DataService;
             var кредитныеКарты = ds.Query<Сотрудник>(Сотрудник.Views.СотрудникE)
                                  .Count(k => k.Паспорт == UpdatedObject.Паспорт && k.__PrimaryKey != UpdatedObject.__PrimaryKey );
