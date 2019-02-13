@@ -33,73 +33,15 @@ namespace IIS.Product_26934
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("AuditView", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("AuditView", "ИсторияОкладов", "AuditView", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("AuditView", "ИсторияРуководителей", "AuditView", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("AuditView", "СотрудникПроект", "AuditView", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("AuditView", "РабочийПериод", "AuditView", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("AuditView", "СписокАттестаций", "AuditView", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [View("v0.5_СотрудникE", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v0.5_СотрудникE", "СписокАттестаций", "v0.5_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v0.5_СотрудникE", "РабочийПериод", "v0.5_РабочийПериодE", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v0.5_СотрудникE", "ИсторияРуководителей", "v0.5_ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v0.5_СотрудникE", "ИсторияОкладов", "v0.5_ИсторияОкладовE", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v0.5_СотрудникE", "СотрудникПроект", "v0.5_СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [View("v0.5_СотрудникL", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("v2_СотрудникE", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v2_СотрудникE", "СписокАттестаций", "v2_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v2_СотрудникE", "РабочийПериод", "v2_РабочийПериодE", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v2_СотрудникE", "ИсторияРуководителей", "v2_ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v2_СотрудникE", "ИсторияОкладов", "v2_ИсторияОкладовE", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v2_СотрудникE", "СотрудникПроект", "v2_СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [View("v2_СотрудникL", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
+            "ФИО",
+            "ДатаРождения",
+            "Паспорт",
+            "Адрес",
+            "Должность",
+            "CreateTime",
+            "Creator",
+            "EditTime",
+            "Editor"})]
     [View("v3_СотрудникE", new string[] {
             "ФИО as \'ФИО\'",
             "ДатаРождения as \'Дата рождения\'",
@@ -126,80 +68,6 @@ namespace IIS.Product_26934
             "Creator as \'Создатель\'",
             "EditTime as \'Редактирование\'",
             "Editor as \'Редактор\'"})]
-    [View("v4_СотрудникE", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v4_СотрудникE", "СписокАттестаций", "v4_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v4_СотрудникE", "РабочийПериод", "v4_РабочийПериодE", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v4_СотрудникE", "ИсторияРуководителей", "v4_ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v4_СотрудникE", "ИсторияОкладов", "v4_ИсторияОкладовE", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v4_СотрудникE", "СотрудникПроект", "v4_СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [View("v4_СотрудникL", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("v5_СотрудникE", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v5_СотрудникE", "СписокАттестаций", "v5_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v5_СотрудникE", "РабочийПериод", "v5_РабочийПериодE", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v5_СотрудникE", "ИсторияРуководителей", "v5_ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v5_СотрудникE", "ИсторияОкладов", "v5_ИсторияОкладовE", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("v5_СотрудникE", "СотрудникПроект", "v5_СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [View("v5_СотрудникL", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("СотрудникE", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("СотрудникE", "ИсторияОкладов", "ИсторияОкладовE", true, "", "История окладов", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("СотрудникE", "ИсторияРуководителей", "ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("СотрудникE", "СотрудникПроект", "СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("СотрудникE", "РабочийПериод", "РабочийПериодE", true, "", "Рабочий период", true, new string[] {
-            ""})]
-    [AssociatedDetailViewAttribute("СотрудникE", "СписокАттестаций", "СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
-            ""})]
-    [View("СотрудникL", new string[] {
-            "ФИО as \'ФИО\'",
-            "ДатаРождения as \'Дата рождения\'",
-            "Паспорт as \'Паспорт\'",
-            "Адрес as \'Адрес\'",
-            "Должность as \'Должность\'"})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         
@@ -736,50 +604,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_СотрудникE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_СотрудникE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_СотрудникE", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v0.5_СотрудникL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_СотрудникL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_СотрудникL", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_СотрудникE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_СотрудникE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_СотрудникE", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_СотрудникL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_СотрудникL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_СотрудникL", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
             /// "v3_СотрудникE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_СотрудникE
@@ -798,72 +622,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_СотрудникL", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_СотрудникE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_СотрудникE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_СотрудникE", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_СотрудникL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_СотрудникL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_СотрудникL", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_СотрудникE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_СотрудникE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_СотрудникE", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_СотрудникL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_СотрудникL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_СотрудникL", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "СотрудникE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View СотрудникE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("СотрудникE", typeof(IIS.Product_26934.Сотрудник));
-                }
-            }
-            
-            /// <summary>
-            /// "СотрудникL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View СотрудникL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("СотрудникL", typeof(IIS.Product_26934.Сотрудник));
                 }
             }
         }

@@ -35,15 +35,7 @@ namespace IIS.Product_26934
             "НачальнаяДата as \'Начальная дата\'",
             "КонечнаяДата as \'Конечная дата\'",
             "Оклад as \'Оклад\'"})]
-    [View("v2_ИсторияОкладовE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Оклад as \'Оклад\'"})]
     [View("v3_ИсторияОкладовE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Оклад as \'Оклад\'"})]
-    [View("ИсторияОкладовE", new string[] {
             "НачальнаяДата as \'Начальная дата\'",
             "КонечнаяДата as \'Конечная дата\'",
             "Оклад as \'Оклад\'"})]
@@ -343,17 +335,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v2_ИсторияОкладовE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_ИсторияОкладовE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_ИсторияОкладовE", typeof(IIS.Product_26934.ИсторияОкладов));
-                }
-            }
-            
-            /// <summary>
             /// "v3_ИсторияОкладовE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_ИсторияОкладовE
@@ -361,17 +342,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_ИсторияОкладовE", typeof(IIS.Product_26934.ИсторияОкладов));
-                }
-            }
-            
-            /// <summary>
-            /// "ИсторияОкладовE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ИсторияОкладовE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ИсторияОкладовE", typeof(IIS.Product_26934.ИсторияОкладов));
                 }
             }
         }

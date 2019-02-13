@@ -59,34 +59,9 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.РабочийПериод.Views.v05_РабочийПериодE">
-            <summary>
-            "v0.5_РабочийПериодE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.РабочийПериод.Views.v2_РабочийПериодE">
-            <summary>
-            "v2_РабочийПериодE" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.РабочийПериод.Views.v3_РабочийПериодE">
             <summary>
             "v3_РабочийПериодE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.РабочийПериод.Views.v4_РабочийПериодE">
-            <summary>
-            "v4_РабочийПериодE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.РабочийПериод.Views.v5_РабочийПериодE">
-            <summary>
-            "v5_РабочийПериодE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.РабочийПериод.Views.РабочийПериодE">
-            <summary>
-            "РабочийПериодE" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.РабочийПериод.AuditSettings">
@@ -270,26 +245,6 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v05_ПроектE">
-            <summary>
-            "v0.5_ПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v05_ПроектL">
-            <summary>
-            "v0.5_ПроектL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v2_ПроектE">
-            <summary>
-            "v2_ПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v2_ПроектL">
-            <summary>
-            "v2_ПроектL" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.Проект.Views.v3_ПроектE">
             <summary>
             "v3_ПроектE" view.
@@ -298,36 +253,6 @@
         <member name="P:IIS.Product_26934.Проект.Views.v3_ПроектL">
             <summary>
             "v3_ПроектL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v4_ПроектE">
-            <summary>
-            "v4_ПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v4_ПроектL">
-            <summary>
-            "v4_ПроектL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v5_ПроектE">
-            <summary>
-            "v5_ПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.v5_ПроектL">
-            <summary>
-            "v5_ПроектL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.ПроектE">
-            <summary>
-            "ПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Проект.Views.ПроектL">
-            <summary>
-            "ПроектL" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.Проект.AuditSettings">
@@ -485,34 +410,9 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v05_СотрудникПроектE">
-            <summary>
-            "v0.5_СотрудникПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v2_СотрудникПроектE">
-            <summary>
-            "v2_СотрудникПроектE" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.СотрудникПроект.Views.v3_СотрудникПроектE">
             <summary>
             "v3_СотрудникПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v4_СотрудникПроектE">
-            <summary>
-            "v4_СотрудникПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СотрудникПроект.Views.v5_СотрудникПроектE">
-            <summary>
-            "v5_СотрудникПроектE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СотрудникПроект.Views.СотрудникПроектE">
-            <summary>
-            "СотрудникПроектE" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.СотрудникПроект.AuditSettings">
@@ -706,26 +606,6 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v05_СотрудникE">
-            <summary>
-            "v0.5_СотрудникE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v05_СотрудникL">
-            <summary>
-            "v0.5_СотрудникL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v2_СотрудникE">
-            <summary>
-            "v2_СотрудникE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v2_СотрудникL">
-            <summary>
-            "v2_СотрудникL" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.Сотрудник.Views.v3_СотрудникE">
             <summary>
             "v3_СотрудникE" view.
@@ -734,36 +614,6 @@
         <member name="P:IIS.Product_26934.Сотрудник.Views.v3_СотрудникL">
             <summary>
             "v3_СотрудникL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v4_СотрудникE">
-            <summary>
-            "v4_СотрудникE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v4_СотрудникL">
-            <summary>
-            "v4_СотрудникL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v5_СотрудникE">
-            <summary>
-            "v5_СотрудникE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.v5_СотрудникL">
-            <summary>
-            "v5_СотрудникL" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.СотрудникE">
-            <summary>
-            "СотрудникE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.Views.СотрудникL">
-            <summary>
-            "СотрудникL" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.Сотрудник.AuditSettings">
@@ -911,19 +761,9 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.v2_ИсторияОкладовE">
-            <summary>
-            "v2_ИсторияОкладовE" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.ИсторияОкладов.Views.v3_ИсторияОкладовE">
             <summary>
             "v3_ИсторияОкладовE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.ИсторияОкладов.Views.ИсторияОкладовE">
-            <summary>
-            "ИсторияОкладовE" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.ИсторияОкладов.AuditSettings">
@@ -1087,34 +927,9 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v05_ИсторияРуководителейE">
-            <summary>
-            "v0.5_ИсторияРуководителейE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v2_ИсторияРуководителейE">
-            <summary>
-            "v2_ИсторияРуководителейE" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v3_ИсторияРуководителейE">
             <summary>
             "v3_ИсторияРуководителейE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v4_ИсторияРуководителейE">
-            <summary>
-            "v4_ИсторияРуководителейE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.v5_ИсторияРуководителейE">
-            <summary>
-            "v5_ИсторияРуководителейE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.ИсторияРуководителей.Views.ИсторияРуководителейE">
-            <summary>
-            "ИсторияРуководителейE" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.ИсторияРуководителей.AuditSettings">
@@ -1273,34 +1088,9 @@
             "AuditView" view.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v05_СписокАттестацийE">
-            <summary>
-            "v0.5_СписокАттестацийE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v2_СписокАттестацийE">
-            <summary>
-            "v2_СписокАттестацийE" view.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.СписокАттестаций.Views.v3_СписокАттестацийE">
             <summary>
             "v3_СписокАттестацийE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v4_СписокАттестацийE">
-            <summary>
-            "v4_СписокАттестацийE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СписокАттестаций.Views.v5_СписокАттестацийE">
-            <summary>
-            "v5_СписокАттестацийE" view.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.СписокАттестаций.Views.СписокАттестацийE">
-            <summary>
-            "СписокАттестацийE" view.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.СписокАттестаций.AuditSettings">

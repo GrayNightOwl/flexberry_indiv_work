@@ -37,27 +37,7 @@ namespace IIS.Product_26934
             "ДатаПриёма as \'Дата приёма\'",
             "ДатаУвольнения as \'Дата увольнения\'",
             "Должность as \'Должность\'"})]
-    [View("v0.5_РабочийПериодE", new string[] {
-            "ДатаПриёма as \'Дата приёма\'",
-            "ДатаУвольнения as \'Дата увольнения\'",
-            "Должность as \'Должность\'"})]
-    [View("v2_РабочийПериодE", new string[] {
-            "ДатаПриёма as \'Дата приёма\'",
-            "ДатаУвольнения as \'Дата увольнения\'",
-            "Должность as \'Должность\'"})]
     [View("v3_РабочийПериодE", new string[] {
-            "ДатаПриёма as \'Дата приёма\'",
-            "ДатаУвольнения as \'Дата увольнения\'",
-            "Должность as \'Должность\'"})]
-    [View("v4_РабочийПериодE", new string[] {
-            "ДатаПриёма as \'Дата приёма\'",
-            "ДатаУвольнения as \'Дата увольнения\'",
-            "Должность as \'Должность\'"})]
-    [View("v5_РабочийПериодE", new string[] {
-            "ДатаПриёма as \'Дата приёма\'",
-            "ДатаУвольнения as \'Дата увольнения\'",
-            "Должность as \'Должность\'"})]
-    [View("РабочийПериодE", new string[] {
             "ДатаПриёма as \'Дата приёма\'",
             "ДатаУвольнения as \'Дата увольнения\'",
             "Должность as \'Должность\'"})]
@@ -358,28 +338,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_РабочийПериодE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_РабочийПериодE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_РабочийПериодE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_РабочийПериодE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
-                }
-            }
-            
-            /// <summary>
             /// "v3_РабочийПериодE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_РабочийПериодE
@@ -387,39 +345,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_РабочийПериодE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_РабочийПериодE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_РабочийПериодE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_РабочийПериодE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
-                }
-            }
-            
-            /// <summary>
-            /// "РабочийПериодE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View РабочийПериодE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("РабочийПериодE", typeof(IIS.Product_26934.РабочийПериод));
                 }
             }
         }

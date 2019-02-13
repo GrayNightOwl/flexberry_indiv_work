@@ -38,20 +38,6 @@ namespace IIS.Product_26934
             "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
             "Руководитель.ФИО"})]
     [MasterViewDefineAttribute("AuditView", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [View("v0.5_ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Руководитель.ФИО"})]
-    [MasterViewDefineAttribute("v0.5_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [View("v2_ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Руководитель.ФИО"})]
-    [MasterViewDefineAttribute("v2_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     [View("v3_ИсторияРуководителейE", new string[] {
             "НачальнаяДата as \'Начальная дата\'",
             "КонечнаяДата as \'Конечная дата\'",
@@ -59,27 +45,6 @@ namespace IIS.Product_26934
             "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
             "Руководитель.ФИО"})]
     [MasterViewDefineAttribute("v3_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [View("v4_ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Руководитель.ФИО"})]
-    [MasterViewDefineAttribute("v4_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [View("v5_ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Руководитель.ФИО"})]
-    [MasterViewDefineAttribute("v5_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
-    [View("ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
-            "КонечнаяДата as \'Конечная дата\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Руководитель.ФИО"})]
-    [MasterViewDefineAttribute("ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ИсторияРуководителей : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         
@@ -378,28 +343,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_ИсторияРуководителейE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_ИсторияРуководителейE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_ИсторияРуководителейE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_ИсторияРуководителейE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
-                }
-            }
-            
-            /// <summary>
             /// "v3_ИсторияРуководителейE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_ИсторияРуководителейE
@@ -407,39 +350,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_ИсторияРуководителейE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_ИсторияРуководителейE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_ИсторияРуководителейE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_ИсторияРуководителейE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
-                }
-            }
-            
-            /// <summary>
-            /// "ИсторияРуководителейE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ИсторияРуководителейE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ИсторияРуководителейE", typeof(IIS.Product_26934.ИсторияРуководителей));
                 }
             }
         }

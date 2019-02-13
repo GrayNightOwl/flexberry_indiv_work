@@ -34,22 +34,7 @@ namespace IIS.Product_26934
     [View("AuditView", new string[] {
             "Название as \'Название\'",
             "ДатаПроведения as \'Дата проведения\'"})]
-    [View("v0.5_СписокАттестацийE", new string[] {
-            "Название as \'Название\'",
-            "ДатаПроведения as \'Дата проведения\'"})]
-    [View("v2_СписокАттестацийE", new string[] {
-            "Название as \'Название\'",
-            "ДатаПроведения as \'Дата проведения\'"})]
     [View("v3_СписокАттестацийE", new string[] {
-            "Название as \'Название\'",
-            "ДатаПроведения as \'Дата проведения\'"})]
-    [View("v4_СписокАттестацийE", new string[] {
-            "Название as \'Название\'",
-            "ДатаПроведения as \'Дата проведения\'"})]
-    [View("v5_СписокАттестацийE", new string[] {
-            "Название as \'Название\'",
-            "ДатаПроведения as \'Дата проведения\'"})]
-    [View("СписокАттестацийE", new string[] {
             "Название as \'Название\'",
             "ДатаПроведения as \'Дата проведения\'"})]
     public class СписокАттестаций : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
@@ -316,28 +301,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_СписокАттестацийE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_СписокАттестацийE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_СписокАттестацийE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_СписокАттестацийE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
-                }
-            }
-            
-            /// <summary>
             /// "v3_СписокАттестацийE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_СписокАттестацийE
@@ -345,39 +308,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_СписокАттестацийE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_СписокАттестацийE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_СписокАттестацийE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_СписокАттестацийE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
-                }
-            }
-            
-            /// <summary>
-            /// "СписокАттестацийE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View СписокАттестацийE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("СписокАттестацийE", typeof(IIS.Product_26934.СписокАттестаций));
                 }
             }
         }

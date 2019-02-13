@@ -40,24 +40,6 @@ namespace IIS.Product_26934
             "Проект.Название as \'Название\'"}, Hidden=new string[] {
             "Проект.Название"})]
     [MasterViewDefineAttribute("AuditView", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
-    [View("v0.5_СотрудникПроектE", new string[] {
-            "ДатаПодключения as \'Дата подключения\'",
-            "ДатаВыхода as \'Дата выхода\'",
-            "РольВПроекте as \'Роль в проекте\'",
-            "Примечания as \'Примечания\'",
-            "Проект as \'Проект\'",
-            "Проект.Название as \'Название\'"}, Hidden=new string[] {
-            "Проект.Название"})]
-    [MasterViewDefineAttribute("v0.5_СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
-    [View("v2_СотрудникПроектE", new string[] {
-            "ДатаПодключения as \'Дата подключения\'",
-            "ДатаВыхода as \'Дата выхода\'",
-            "РольВПроекте as \'Роль в проекте\'",
-            "Примечания as \'Примечания\'",
-            "Проект as \'Проект\'",
-            "Проект.Название as \'Название\'"}, Hidden=new string[] {
-            "Проект.Название"})]
-    [MasterViewDefineAttribute("v2_СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
     [View("v3_СотрудникПроектE", new string[] {
             "ДатаПодключения as \'Дата подключения\'",
             "ДатаВыхода as \'Дата выхода\'",
@@ -67,33 +49,6 @@ namespace IIS.Product_26934
             "Проект.Название as \'Название\'"}, Hidden=new string[] {
             "Проект.Название"})]
     [MasterViewDefineAttribute("v3_СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
-    [View("v4_СотрудникПроектE", new string[] {
-            "ДатаПодключения as \'Дата подключения\'",
-            "ДатаВыхода as \'Дата выхода\'",
-            "РольВПроекте as \'Роль в проекте\'",
-            "Примечания as \'Примечания\'",
-            "Проект as \'Проект\'",
-            "Проект.Название as \'Название\'"}, Hidden=new string[] {
-            "Проект.Название"})]
-    [MasterViewDefineAttribute("v4_СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
-    [View("v5_СотрудникПроектE", new string[] {
-            "ДатаПодключения as \'Дата подключения\'",
-            "ДатаВыхода as \'Дата выхода\'",
-            "РольВПроекте as \'Роль в проекте\'",
-            "Примечания as \'Примечания\'",
-            "Проект as \'Проект\'",
-            "Проект.Название as \'Название\'"}, Hidden=new string[] {
-            "Проект.Название"})]
-    [MasterViewDefineAttribute("v5_СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
-    [View("СотрудникПроектE", new string[] {
-            "ДатаПодключения as \'Дата подключения\'",
-            "ДатаВыхода as \'Дата выхода\'",
-            "РольВПроекте as \'Роль в проекте\'",
-            "Примечания as \'Примечания\'",
-            "Проект as \'Проект\'",
-            "Проект.Название as \'Название\'"}, Hidden=new string[] {
-            "Проект.Название"})]
-    [MasterViewDefineAttribute("СотрудникПроектE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
     public class СотрудникПроект : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         
@@ -461,28 +416,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_СотрудникПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_СотрудникПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_СотрудникПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_СотрудникПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
-                }
-            }
-            
-            /// <summary>
             /// "v3_СотрудникПроектE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_СотрудникПроектE
@@ -490,39 +423,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_СотрудникПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_СотрудникПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_СотрудникПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_СотрудникПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
-                }
-            }
-            
-            /// <summary>
-            /// "СотрудникПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View СотрудникПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("СотрудникПроектE", typeof(IIS.Product_26934.СотрудникПроект));
                 }
             }
         }

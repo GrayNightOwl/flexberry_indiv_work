@@ -40,52 +40,6 @@ namespace IIS.Product_26934
             "СрокЗавершения as \'Срок завершения\'",
             "Руководитель as \'Руководитель\'",
             "Руководитель.ФИО as \'ФИО\'"})]
-    [View("v0.5_ПроектE", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
-    [View("v0.5_ПроектL", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель.ФИО as \'ФИО\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("v2_ПроектE", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
-    [View("v2_ПроектL", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель.ФИО as \'ФИО\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
     [View("v3_ПроектE", new string[] {
             "Название as \'Название\'",
             "Заказчик as \'Заказчик\'",
@@ -109,71 +63,6 @@ namespace IIS.Product_26934
             "Creator as \'Создатель\'",
             "EditTime as \'Редактирование\'",
             "Editor as \'Редактор\'"})]
-    [View("v4_ПроектE", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
-    [View("v4_ПроектL", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель.ФИО as \'ФИО\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("v5_ПроектE", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
-    [View("v5_ПроектL", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель.ФИО as \'ФИО\'",
-            "CreateTime as \'Создание\'",
-            "Creator as \'Создатель\'",
-            "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
-    [View("ПроектE", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель as \'Руководитель\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
-    [View("ПроектL", new string[] {
-            "Название as \'Название\'",
-            "Заказчик as \'Заказчик\'",
-            "Описание as \'Описание\'",
-            "Обязанности as \'Обязанности\'",
-            "Стоимость as \'Стоимость\'",
-            "СрокНачала as \'Срок начала\'",
-            "СрокЗавершения as \'Срок завершения\'",
-            "Руководитель.ФИО as \'ФИО\'"})]
     public class Проект : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         
@@ -605,50 +494,6 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v0.5_ПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_ПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_ПроектE", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v0.5_ПроектL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v05_ПроектL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v0.5_ПроектL", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_ПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_ПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_ПроектE", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v2_ПроектL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v2_ПроектL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v2_ПроектL", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
             /// "v3_ПроектE" view.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_ПроектE
@@ -667,72 +512,6 @@ namespace IIS.Product_26934
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("v3_ПроектL", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_ПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_ПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_ПроектE", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v4_ПроектL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v4_ПроектL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v4_ПроектL", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_ПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_ПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_ПроектE", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "v5_ПроектL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View v5_ПроектL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("v5_ПроектL", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "ПроектE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ПроектE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ПроектE", typeof(IIS.Product_26934.Проект));
-                }
-            }
-            
-            /// <summary>
-            /// "ПроектL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ПроектL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ПроектL", typeof(IIS.Product_26934.Проект));
                 }
             }
         }
