@@ -89,13 +89,13 @@ namespace IIS.Product_26934
         
         private string fEditor;
         
+        private IIS.Product_26934.DetailArrayOfИсторияОкладов fИсторияОкладов;
+        
         private IIS.Product_26934.DetailArrayOfСписокАттестаций fСписокАттестаций;
         
         private IIS.Product_26934.DetailArrayOfРабочийПериод fРабочийПериод;
         
         private IIS.Product_26934.DetailArrayOfИсторияРуководителей fИсторияРуководителей;
-        
-        private IIS.Product_26934.DetailArrayOfИсторияОкладов fИсторияОкладов;
         
         private IIS.Product_26934.DetailArrayOfСотрудникПроект fСотрудникПроект;
         
@@ -392,6 +392,41 @@ namespace IIS.Product_26934
         /// <summary>
         /// Сотрудник.
         /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
+        public virtual IIS.Product_26934.DetailArrayOfИсторияОкладов ИсторияОкладов
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
+                if ((this.fИсторияОкладов == null))
+                {
+                    this.fИсторияОкладов = new IIS.Product_26934.DetailArrayOfИсторияОкладов(this);
+                }
+                IIS.Product_26934.DetailArrayOfИсторияОкладов result = this.fИсторияОкладов;
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
+                this.fИсторияОкладов = value;
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Сотрудник.
+        /// </summary>
         // *** Start programmer edit section *** (Сотрудник.СписокАттестаций CustomAttributes)
 
         // *** End programmer edit section *** (Сотрудник.СписокАттестаций CustomAttributes)
@@ -491,41 +526,6 @@ namespace IIS.Product_26934
                 // *** Start programmer edit section *** (Сотрудник.ИсторияРуководителей Set end)
 
                 // *** End programmer edit section *** (Сотрудник.ИсторияРуководителей Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Сотрудник.
-        /// </summary>
-        // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
-
-        // *** End programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
-        public virtual IIS.Product_26934.DetailArrayOfИсторияОкладов ИсторияОкладов
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
-                if ((this.fИсторияОкладов == null))
-                {
-                    this.fИсторияОкладов = new IIS.Product_26934.DetailArrayOfИсторияОкладов(this);
-                }
-                IIS.Product_26934.DetailArrayOfИсторияОкладов result = this.fИсторияОкладов;
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
-                this.fИсторияОкладов = value;
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
             }
         }
         

@@ -571,6 +571,11 @@
             Последний редактор объекта.
             </summary>
         </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ИсторияОкладов">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
         <member name="P:IIS.Product_26934.Сотрудник.СписокАттестаций">
             <summary>
             Сотрудник.
@@ -582,11 +587,6 @@
             </summary>
         </member>
         <member name="P:IIS.Product_26934.Сотрудник.ИсторияРуководителей">
-            <summary>
-            Сотрудник.
-            </summary>
-        </member>
-        <member name="P:IIS.Product_26934.Сотрудник.ИсторияОкладов">
             <summary>
             Сотрудник.
             </summary>
@@ -763,7 +763,7 @@
         </member>
         <member name="P:IIS.Product_26934.ИсторияОкладов.Views.v3_ИсторияОкладовE">
             <summary>
-            "v3_ИсторияОкладовE" view.
+            История окладов.
             </summary>
         </member>
         <member name="T:IIS.Product_26934.ИсторияОкладов.AuditSettings">

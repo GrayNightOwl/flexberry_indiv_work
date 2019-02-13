@@ -335,7 +335,7 @@ namespace IIS.Product_26934
             }
             
             /// <summary>
-            /// "v3_ИсторияОкладовE" view.
+            /// История окладов.
             /// </summary>
             public static ICSSoft.STORMNET.View v3_ИсторияОкладовE
             {
