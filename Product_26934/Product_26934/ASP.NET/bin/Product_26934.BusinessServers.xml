@@ -9,5 +9,10 @@
             Сотрудник БС.
             </summary>
         </member>
+        <member name="T:IIS.Product_26934.РабочийПериодБС">
+            <summary>
+            РабочийПериодБС.
+            </summary>
+        </member>
     </members>
 </doc>
