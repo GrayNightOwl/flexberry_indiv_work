@@ -68,7 +68,7 @@ namespace IIS.Product_26934
             "Creator as \'Создатель\'",
             "EditTime as \'Редактирование\'",
             "Editor as \'Редактор\'"})]
-    [AssociatedDetailViewAttribute("v3_СотрудникL", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "|Описание\\-Стоимость", "История Окладов", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникL", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "\\", "История Окладов", true, new string[] {
             ""})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
