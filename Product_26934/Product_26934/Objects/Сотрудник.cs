@@ -48,7 +48,7 @@ namespace IIS.Product_26934
             "Паспорт as \'Паспорт\'",
             "Адрес as \'Адрес\'",
             "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "", "История окладов", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "|Описание\\-Стоимость", "История окладов", true, new string[] {
             ""})]
     [AssociatedDetailViewAttribute("v3_СотрудникE", "СписокАттестаций", "v3_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
             ""})]
@@ -89,8 +89,6 @@ namespace IIS.Product_26934
         
         private string fEditor;
         
-        private IIS.Product_26934.DetailArrayOfИсторияОкладов fИсторияОкладов;
-        
         private IIS.Product_26934.DetailArrayOfСписокАттестаций fСписокАттестаций;
         
         private IIS.Product_26934.DetailArrayOfРабочийПериод fРабочийПериод;
@@ -98,6 +96,8 @@ namespace IIS.Product_26934
         private IIS.Product_26934.DetailArrayOfИсторияРуководителей fИсторияРуководителей;
         
         private IIS.Product_26934.DetailArrayOfСотрудникПроект fСотрудникПроект;
+        
+        private IIS.Product_26934.DetailArrayOfИсторияОкладов fИсторияОкладов;
         
         // *** Start programmer edit section *** (Сотрудник CustomMembers)
 
@@ -392,41 +392,6 @@ namespace IIS.Product_26934
         /// <summary>
         /// Сотрудник.
         /// </summary>
-        // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
-
-        // *** End programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
-        public virtual IIS.Product_26934.DetailArrayOfИсторияОкладов ИсторияОкладов
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
-                if ((this.fИсторияОкладов == null))
-                {
-                    this.fИсторияОкладов = new IIS.Product_26934.DetailArrayOfИсторияОкладов(this);
-                }
-                IIS.Product_26934.DetailArrayOfИсторияОкладов result = this.fИсторияОкладов;
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
-                this.fИсторияОкладов = value;
-                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
-
-                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Сотрудник.
-        /// </summary>
         // *** Start programmer edit section *** (Сотрудник.СписокАттестаций CustomAttributes)
 
         // *** End programmer edit section *** (Сотрудник.СписокАттестаций CustomAttributes)
@@ -561,6 +526,41 @@ namespace IIS.Product_26934
                 // *** Start programmer edit section *** (Сотрудник.СотрудникПроект Set end)
 
                 // *** End programmer edit section *** (Сотрудник.СотрудникПроект Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Сотрудник.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.ИсторияОкладов CustomAttributes)
+        public virtual IIS.Product_26934.DetailArrayOfИсторияОкладов ИсторияОкладов
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get start)
+                if ((this.fИсторияОкладов == null))
+                {
+                    this.fИсторияОкладов = new IIS.Product_26934.DetailArrayOfИсторияОкладов(this);
+                }
+                IIS.Product_26934.DetailArrayOfИсторияОкладов result = this.fИсторияОкладов;
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set start)
+                this.fИсторияОкладов = value;
+                // *** Start programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
+
+                // *** End programmer edit section *** (Сотрудник.ИсторияОкладов Set end)
             }
         }
         

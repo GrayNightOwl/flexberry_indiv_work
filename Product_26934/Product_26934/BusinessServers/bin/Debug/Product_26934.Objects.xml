@@ -571,11 +571,6 @@
             Последний редактор объекта.
             </summary>
         </member>
-        <member name="P:IIS.Product_26934.Сотрудник.ИсторияОкладов">
-            <summary>
-            Сотрудник.
-            </summary>
-        </member>
         <member name="P:IIS.Product_26934.Сотрудник.СписокАттестаций">
             <summary>
             Сотрудник.
@@ -592,6 +587,11 @@
             </summary>
         </member>
         <member name="P:IIS.Product_26934.Сотрудник.СотрудникПроект">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_26934.Сотрудник.ИсторияОкладов">
             <summary>
             Сотрудник.
             </summary>

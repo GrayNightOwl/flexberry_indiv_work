@@ -39,7 +39,7 @@ namespace IIS.Product_26934
             "Руководитель.ФИО"})]
     [MasterViewDefineAttribute("AuditView", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     [View("v3_ИсторияРуководителейE", new string[] {
-            "НачальнаяДата as \'Начальная дата\'",
+            "НачальнаяДата as \'Начальная дата\' on \'|Начальная Дата\\-Дата\'",
             "КонечнаяДата as \'Конечная дата\'",
             "Руководитель as \'Руководитель\'",
             "Руководитель.ФИО as \'ФИО\'"}, Hidden=new string[] {

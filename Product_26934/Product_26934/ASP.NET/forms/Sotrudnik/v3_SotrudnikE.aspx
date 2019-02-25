@@ -63,6 +63,12 @@
 </asp:ScriptManager>
 
 <div style="clear: left">
+	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlИсторияОкладов" runat="server" ReadOnly="false" />
+</div>
+<div style="clear: left">
+	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlСписокАттестаций" runat="server" ReadOnly="false" />
+</div>
+<div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlРабочийПериод" runat="server" ReadOnly="false" />
 </div>
 <div style="clear: left">
@@ -70,12 +76,6 @@
 </div>
 <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlСотрудникПроект" runat="server" ReadOnly="false" />
-</div>
-<div style="clear: left">
-	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlИсторияОкладов" runat="server" ReadOnly="false" />
-</div>
-<div style="clear: left">
-	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlСписокАттестаций" runat="server" ReadOnly="false" />
 </div>
 <br/>
 
