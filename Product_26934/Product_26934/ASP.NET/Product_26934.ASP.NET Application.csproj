@@ -264,6 +264,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\BaseTheme\Pages\MainPage\Images\app-logo2.png" />
+    <Content Include="App_Themes\BlueSky\Pages\MainPage\Images\app-logo2.png" />
     <Content Include="forms\Proekt\v3_ProektL.aspx" />
     <Compile Include="forms\Proekt\v3_ProektL.aspx.cs">
       <DependentUpon>v3_ProektL.aspx</DependentUpon>
