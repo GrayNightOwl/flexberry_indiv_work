@@ -59,6 +59,5 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\ru\Microsoft.Spatial.resources.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\zh-Hans\Microsoft.Spatial.resources.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\zh-Hant\Microsoft.Spatial.resources.dll
-D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.csprojResolveAssemblyReference.cache
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.pdb

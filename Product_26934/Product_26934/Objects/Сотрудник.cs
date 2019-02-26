@@ -48,15 +48,15 @@ namespace IIS.Product_26934
             "Паспорт as \'Паспорт\'",
             "Адрес as \'Адрес\'",
             "Должность as \'Должность\'"})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "|Описание\\-Стоимость", "История окладов", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "-История окладов", "История окладов", true, new string[] {
             ""})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "СписокАттестаций", "v3_СписокАттестацийE", true, "", "Список аттестаций", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияРуководителей", "v3_ИсторияРуководителейE", true, "-История руководителей", "История руководителей", true, new string[] {
             ""})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "РабочийПериод", "v3_РабочийПериодE", true, "", "Рабочий период", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "РабочийПериод", "v3_РабочийПериодE", true, "-Рабочие периоды", "Рабочий период", true, new string[] {
             ""})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияРуководителей", "v3_ИсторияРуководителейE", true, "", "История руководителей", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "СотрудникПроект", "v3_СотрудникПроектE", true, "-Список проектов", "Список проектов", true, new string[] {
             ""})]
-    [AssociatedDetailViewAttribute("v3_СотрудникE", "СотрудникПроект", "v3_СотрудникПроектE", true, "", "Сотрудник проект", true, new string[] {
+    [AssociatedDetailViewAttribute("v3_СотрудникE", "СписокАттестаций", "v3_СписокАттестацийE", false, "-Список аттестаций", "Список аттестаций", true, new string[] {
             ""})]
     [View("v3_СотрудникL", new string[] {
             "ФИО as \'ФИО\'",
@@ -68,8 +68,6 @@ namespace IIS.Product_26934
             "Creator as \'Создатель\'",
             "EditTime as \'Редактирование\'",
             "Editor as \'Редактор\'"})]
-    [AssociatedDetailViewAttribute("v3_СотрудникL", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "\\", "История Окладов", true, new string[] {
-            ""})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         

@@ -121,22 +121,13 @@ namespace IIS.Product_26934 {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// ctrlИсторияОкладов элемент управления.
+        /// ctrl_fsРабочие_периоды элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияОкладов;
-        
-        /// <summary>
-        /// ctrlСписокАттестаций элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlСписокАттестаций;
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsРабочие_периоды;
         
         /// <summary>
         /// ctrlРабочийПериод элемент управления.
@@ -148,13 +139,13 @@ namespace IIS.Product_26934 {
         protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlРабочийПериод;
         
         /// <summary>
-        /// ctrlИсторияРуководителей элемент управления.
+        /// ctrl_fsСписок_проектов элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияРуководителей;
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsСписок_проектов;
         
         /// <summary>
         /// ctrlСотрудникПроект элемент управления.
@@ -164,5 +155,59 @@ namespace IIS.Product_26934 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlСотрудникПроект;
+        
+        /// <summary>
+        /// ctrl_fsСписок_аттестаций элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsСписок_аттестаций;
+        
+        /// <summary>
+        /// ctrlСписокАттестаций элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlСписокАттестаций;
+        
+        /// <summary>
+        /// ctrl_fsИстория_окладов элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_окладов;
+        
+        /// <summary>
+        /// ctrlИсторияОкладов элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияОкладов;
+        
+        /// <summary>
+        /// ctrl_fsИстория_руководителей элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_руководителей;
+        
+        /// <summary>
+        /// ctrlИсторияРуководителей элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияРуководителей;
     }
 }

@@ -85,14 +85,6 @@
 
 
 </div>
-<div class="clearfix">
-  <asp:Label CssClass="descLbl" ID="ctrlРуководитель_ФИОLabel" runat="server" Text="ФИО" EnableViewState="False">
-</asp:Label>
-<asp:TextBox CssClass="descTxt" ID="ctrlРуководитель_ФИО" runat="server" ReadOnly="true">
-</asp:TextBox>
-
-
-</div>
 <br/>
 
 </div>

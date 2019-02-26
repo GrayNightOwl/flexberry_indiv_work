@@ -6,6 +6,7 @@
     <div class="<%= Constants.FormCssClass + " " + Constants.ListFormCssClass %>">
         <h2 class="<%= Constants.FormHeaderCssClass + " " + Constants.ListFormHeaderCssClass %>">Сотрудник</h2>
         <div class="<%= Constants.FormControlsCssClass + " " + Constants.ListFormControlsCssClass %>">
+            <asp:ImageButton ID="AuditBtn" runat="server" OnClick="AuditBtn_Click" AlternateText="Аудит"/>
             <ac:WebObjectListView ID="WebObjectListView1" runat="server" Visible="true" />
         </div>
     </div>
