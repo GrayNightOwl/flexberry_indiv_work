@@ -171,15 +171,18 @@
         /// </summary>
         /// <param name="sender">Источник события.</param>
         /// <param name="e">Аргументы события.</param>
-        protected void OnThemeChangedHandler(object sender, EventArgs e)
-        {
-            ThemeService.Current.Theme = themesList.SelectedValue;
+        /// 
 
-            // Для применения изменений требуется перезагрузить страницу т.к.
-            // настройки тем могут быть изменены не позже OnInit.
-            Response.Redirect(Request.RawUrl, false);
-            Context.ApplicationInstance.CompleteRequest();
-        }
+
+        //protected void OnThemeChangedHandler(object sender, EventArgs e)
+        //{
+        //    ThemeService.Current.Theme = themesList.SelectedValue;
+
+        //    // Для применения изменений требуется перезагрузить страницу т.к.
+        //    // настройки тем могут быть изменены не позже OnInit.
+        //    Response.Redirect(Request.RawUrl, false);
+        //    Context.ApplicationInstance.CompleteRequest();
+        //}
 
         /// <summary>
         /// Заполняет выпадающий список выбора тем <see cref="themesList"/>, и выбирает в нем текущую тему.
