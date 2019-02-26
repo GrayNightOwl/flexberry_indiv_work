@@ -16,6 +16,7 @@
     using System.IO;
     using System.Linq;
 
+    
     /// <summary>
     /// Класс мастер-страницы приложения.
     /// </summary>
@@ -74,6 +75,7 @@
         /// <returns>CSS-класс тэга "body".</returns>
         protected string GetBodyClass()
         {
+            CopyrightText.Text = Convert.ToString(DateTime.Now.ToString("MMMM.yyyy"));
             return string.Concat(EnumCaption.GetCaptionFor(_layout), _openAsModalDialog ? " modal" : string.Empty);
         }
 
@@ -217,10 +219,17 @@
         //        }
         //    }
         //}
+        
 
         /// <summary>
         /// Метод для настройки видимости меню на основе сохраненных сookies.
         /// </summary>
+
+
+
+
+
+
         private void ApplyTreeViewCookie()
         {
             // чтение Cookies для TreeView
