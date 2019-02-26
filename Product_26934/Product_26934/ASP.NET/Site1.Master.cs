@@ -120,7 +120,7 @@
                 _layout = PageLayout.MainColumn;
             }
 
-            LoadCurrentTheme();
+           // LoadCurrentTheme();
             ApplyTreeViewCookie();
 
             fio.Text = Context.User.Identity.Name;
@@ -187,36 +187,36 @@
         /// <summary>
         /// Заполняет выпадающий список выбора тем <see cref="themesList"/>, и выбирает в нем текущую тему.
         /// </summary>
-        private void LoadCurrentTheme()
-        {
-            themesList.Enabled = ThemeService.Current.CanBeChanged;
-            if (!IsPostBack)
-            {
-                // Получаем имена доступных тем.
-                string availableThemesNamesCacheKey = "AvailableThemesNames";
-                List<string> availableThemesNames = CacheHelper.GetFromCache(availableThemesNamesCacheKey) as List<string>;
+        //private void LoadCurrentTheme()
+        //{
+        //    themesList.Enabled = ThemeService.Current.CanBeChanged;
+        //    if (!IsPostBack)
+        //    {
+        //        // Получаем имена доступных тем.
+        //        string availableThemesNamesCacheKey = "AvailableThemesNames";
+        //        List<string> availableThemesNames = CacheHelper.GetFromCache(availableThemesNamesCacheKey) as List<string>;
 
-                if (availableThemesNames == null)
-                {
-                    availableThemesNames = Directory.GetDirectories(HttpContext.Current.Server.MapPath("~/App_Themes"))
-                        .Select(folder => new DirectoryInfo(folder).Name)
-                        .ToList();
-                    availableThemesNames.Remove("BaseTheme");
+        //        if (availableThemesNames == null)
+        //        {
+        //            availableThemesNames = Directory.GetDirectories(HttpContext.Current.Server.MapPath("~/App_Themes"))
+        //                .Select(folder => new DirectoryInfo(folder).Name)
+        //                .ToList();
+        //            availableThemesNames.Remove("BaseTheme");
 
-                    CacheHelper.SetToCache(availableThemesNamesCacheKey, availableThemesNames);
-                }
+        //            CacheHelper.SetToCache(availableThemesNamesCacheKey, availableThemesNames);
+        //        }
 
-                // Заполняем выпадающий список именами доступных тем.
-                availableThemesNames.ForEach(x => themesList.Items.Add(x));
+        //        // Заполняем выпадающий список именами доступных тем.
+        //        availableThemesNames.ForEach(x => themesList.Items.Add(x));
 
-                // Выбираем в списке текущую тему.
-                var page = Page as BasePage;
-                if (page != null)
-                {
-                    themesList.SelectedValue = ThemeService.Current.Theme;
-                }
-            }
-        }
+        //        // Выбираем в списке текущую тему.
+        //        var page = Page as BasePage;
+        //        if (page != null)
+        //        {
+        //            themesList.SelectedValue = ThemeService.Current.Theme;
+        //        }
+        //    }
+        //}
 
         /// <summary>
         /// Метод для настройки видимости меню на основе сохраненных сookies.
