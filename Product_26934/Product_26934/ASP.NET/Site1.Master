@@ -65,7 +65,7 @@
             <div class="page-empty"></div>
         </div>
         <div class="page-footer">
-            <asp:DropDownList ID="themesList" OnSelectedIndexChanged="OnThemeChangedHandler" AutoPostBack="True" runat="server" />
+<%--            <asp:DropDownList ID="themesList" OnSelectedIndexChanged="OnThemeChangedHandler" AutoPostBack="True" runat="server" />--%>
             <asp:Localize ID="CopyrightText" Text="<%$ Resources: Resource, Footer_Copyright %>" runat="server" />
         </div>
         <asp:HiddenField ID="Menu" runat="server" />
