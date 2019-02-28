@@ -2,8 +2,12 @@
 namespace IIS.Product_26934
 {
     using System;
+    using ICSSoft.STORMNET;
+    using ICSSoft.STORMNET.Windows.Forms;
     using ICSSoft.STORMNET.Web.Controls;
-
+    using ICSSoft.STORMNET.FunctionalLanguage;
+    using ICSSoft.STORMNET.FunctionalLanguage.SQLWhere;
+    using ICSSoft.STORMNET.Business;
     using Resources;
 
     public partial class v3_СотрудникL : BaseListForm<Сотрудник>
@@ -37,6 +41,15 @@ namespace IIS.Product_26934
         /// </summary>
         protected override void Postload()
         {
+            //var langdef = ExternalLangDef.LanguageDef;
+            //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
+            //lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ,
+            //                new VariableDef(langdef.GuidType, Information.ExtractPropertyPath<Сотрудник>(x => x.)), "64F45BC3-339B-4FBA-A036-C5E9FE9EAE53");
+            //var кредиты = DataServiceProvider.DataService.LoadObjects(lcs);
+
+            //var ld = SQLWhereLanguageDef.LanguageDef;
+            //var onlyMenFunction = ld.GetFunction(ld.funcEQ, new VariableDef(ld.StringType, 
+            //    Information.ExtractPropertyPath<ИсторияРуководителей>(x => x.)), EnumCaption.GetCaptionFor(tПол.Мужской));
         }
 
         protected void AuditBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
