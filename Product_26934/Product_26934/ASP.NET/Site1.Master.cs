@@ -85,6 +85,10 @@
         /// <param name="e">Аргументы события.</param>
         protected override void OnInit(EventArgs e)
         {
+
+            ThemeService.Current.Theme = "BlueSky";
+
+
             PageContentManager.AttachExternalFile("~/shared/script/jquery-1.7.2.min.js");
             PageContentManager.AttachExternalFile("~/shared/script/jquery.cookie.js");
             PageContentManager.AttachExternalFile("~/shared/script/jquery.disable.text.select.js");
@@ -97,6 +101,7 @@
             PageContentManager.AttachExternalFile("~/shared/script/jquery.sticky.js");
             PageContentManager.AttachExternalFile("~/shared/script/jquery.ics.js");
 
+
             base.OnInit(e);
         }
 
@@ -108,6 +113,12 @@
         {
             // При открытии окна в качестве редактора лукапа или в дочернем окне следует установить
             // соответствующий тип разметки страницы.
+            ThemeService.Current.Theme = "BlueSky";
+
+
+
+
+
             string lookUpQueryString = Request[WebParamController.OpenedFromLookupParamName];
             bool openAsLookUp = !string.IsNullOrEmpty(lookUpQueryString) && lookUpQueryString.ToLower().Equals("true");
 
@@ -122,7 +133,8 @@
                 _layout = PageLayout.MainColumn;
             }
 
-           // LoadCurrentTheme();
+            //LoadCurrentTheme();
+
             ApplyTreeViewCookie();
 
             fio.Text = Context.User.Identity.Name;
@@ -153,6 +165,9 @@
             // можно перенести в разметку.
             body.AddCssClass(GetBodyClass());
 
+
+            ThemeService.Current.Theme = "BlueSky";
+
             base.OnLoad(e);
         }
 
@@ -178,8 +193,7 @@
 
         //protected void OnThemeChangedHandler(object sender, EventArgs e)
         //{
-        //    ThemeService.Current.Theme = themesList.SelectedValue;
-
+        //    ThemeService.Current.Theme = "BlueSky";
         //    // Для применения изменений требуется перезагрузить страницу т.к.
         //    // настройки тем могут быть изменены не позже OnInit.
         //    Response.Redirect(Request.RawUrl, false);
@@ -219,7 +233,7 @@
         //        }
         //    }
         //}
-        
+
 
         /// <summary>
         /// Метод для настройки видимости меню на основе сохраненных сookies.
