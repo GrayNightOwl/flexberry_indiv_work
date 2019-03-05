@@ -50,6 +50,51 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ActiveReports, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.HtmlExport, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.HtmlExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.PdfExport, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.PdfExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.RtfExport, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.RtfExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.TextExport, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.TextExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.TiffExport, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.TiffExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer, Version=3.3.0.1999, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\ActiveReports.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20053.220, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DiffPlex, Version=1.2.0.25981, Culture=neutral, PublicKeyToken=d5d26e47e9b855cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\DiffPlex.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ActiveDs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96924c19c47317a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\Interop.ActiveDs.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, PublicKeyToken=264e716b2a45d106, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.3.0.0, Culture=neutral, PublicKeyToken=00d61381ec4993d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MagicLocalLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=cd83a4ab7c958644, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.ExternalDll.1.0.0\lib\net35\MagicLocalLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System</HintPath>
     </Reference>
@@ -265,6 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\BaseTheme\Pages\MainPage\Images\app-logo2.png" />
+    <Content Include="App_Themes\BlueSky\customStyles.css" />
     <Content Include="App_Themes\BlueSky\Pages\EditPage\Images\audit.png" />
     <Content Include="App_Themes\BlueSky\Pages\MainPage\Images\app-logo2.png" />
     <Content Include="forms\Proekt\v3_ProektL.aspx" />

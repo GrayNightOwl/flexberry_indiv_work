@@ -63,6 +63,12 @@ namespace IIS.Product_26934
             return base.PreSaveObject();
         }
 
+
+
+        protected void AuditBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        {
+            Response.Redirect("~/flexberry/AuditEntitiesList/");
+        }
         /// <summary>
         /// Нетривиальная логика сохранения объекта.
         /// </summary>

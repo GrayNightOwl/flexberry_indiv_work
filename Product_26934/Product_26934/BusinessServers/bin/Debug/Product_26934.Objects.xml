@@ -571,6 +571,11 @@
             Последний редактор объекта.
             </summary>
         </member>
+        <member name="P:IIS.Product_26934.Сотрудник.Agent">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
         <member name="P:IIS.Product_26934.Сотрудник.СписокАттестаций">
             <summary>
             Сотрудник.

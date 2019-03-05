@@ -41,20 +41,40 @@ namespace IIS.Product_26934
         /// </summary>
         protected override void Postload()
         {
-            //var langdef = ExternalLangDef.LanguageDef;
+            //ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
+            //LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
+            //lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
+            //View view = Information.GetView("ИсторияРуководителейE", typeof(ИсторияРуководителей));
+            //var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
+            //{
+            //    ConnectMasterPorp = "Сотрудник",
+            //    OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
+            //    View = view,
+            //    Type = ldef.GetObjectType("Details")
+            //};
+            //lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExistExact,
+            //                                            dvd,
+            //                                            ldef.GetFunction(ldef.funcEQ,
+            //                                                            new VariableDef(ldef.StringType, "Руководитель"),
+            //                                                            User.Identity.Name));
+            //DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+
+
+
+
+            //// User.Identity.Name
+            ////var langdef = ExternalLangDef.LanguageDef;
             //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            //lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-            //                new VariableDef(langdef.GuidType, Information.ExtractPropertyPath<Сотрудник>(x => x.)), "64F45BC3-339B-4FBA-A036-C5E9FE9EAE53");
-            //var кредиты = DataServiceProvider.DataService.LoadObjects(lcs);
+            ////lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ,
+            ////                new VariableDef(langdef.GuidType, Information.ExtractPropertyPath<Сотрудник>(x => x.)), "64F45BC3-339B-4FBA-A036-C5E9FE9EAE53");
+            ////var кредиты = DataServiceProvider.DataService.LoadObjects(lcs);
 
             //var ld = SQLWhereLanguageDef.LanguageDef;
-            //var onlyMenFunction = ld.GetFunction(ld.funcEQ, new VariableDef(ld.StringType, 
-            //    Information.ExtractPropertyPath<ИсторияРуководителей>(x => x.)), EnumCaption.GetCaptionFor(tПол.Мужской));
+            //var onlyMenFunction = ld.GetFunction(ld.funcEQ, new VariableDef(ld.StringType,
+            //    Information.ExtractPropertyPath<ИсторияРуководителей>(x => x.ИсторияСотрудника.ФИО)), User.Identity.Name);
+            //var клиентыФамилияПетров = DataServiceProvider.DataService.LoadObjects(lcs);
+            //WebObjectListView1.LimitFunction = onlyMenFunction;
         }
 
-        protected void AuditBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
-        {
-            Response.Redirect("~/flexberry/AuditEntitiesList/");
-        }
     }
 }

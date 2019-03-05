@@ -61,3 +61,12 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\zh-Hant\Microsoft.Spatial.resources.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.pdb
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\obj\Debug\Product_26934.Objects.csprojResolveAssemblyReference.cache
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Caching.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.BusinessServers.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.Objects.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Caching.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.BusinessServers.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Objects\bin\Debug\NewPlatform.Flexberry.Security.Objects.xml

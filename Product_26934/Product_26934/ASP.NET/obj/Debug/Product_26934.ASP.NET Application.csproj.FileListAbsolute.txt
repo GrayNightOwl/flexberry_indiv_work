@@ -119,3 +119,14 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\obj\Debug\Product_26934.ASP.NET Application.csprojResolveAssemblyReference.cache
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\obj\Debug\Product_26934.ASP.NET Application.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\obj\Debug\Product_26934.ASP.NET Application.pdb
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.HtmlExport.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.PdfExport.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.RtfExport.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.TextExport.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.TiffExport.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ActiveReports.Viewer.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\C1.Common.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\C1.Win.C1FlexGrid.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\DiffPlex.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\MagicLocalLibrary.dll

@@ -65,3 +65,5 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Busines
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\obj\Debug\Product_26934.BusinessServers.csprojResolveAssemblyReference.cache
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\obj\Debug\Product_26934.BusinessServers.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\obj\Debug\Product_26934.BusinessServers.pdb
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\NewPlatform.Flexberry.Security.Objects.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\NewPlatform.Flexberry.Security.Objects.xml

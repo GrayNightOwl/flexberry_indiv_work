@@ -35,7 +35,7 @@
                         EnableClientScript="true" ValidationGroup="savedoc" CssClass="validator-datePicker" />
 
 </div>
-<div class="clearfix">
+<div class="clearfix2">
   <asp:Label CssClass="descLbl" ID="ctrlПаспортLabel" runat="server" Text="Паспорт" EnableViewState="False">
 </asp:Label>
 <asp:TextBox CssClass="descTxt" ID="ctrlПаспорт" runat="server">
@@ -43,7 +43,7 @@
 
 
 </div>
-<div class="clearfix">
+<div class="clearfix3">
   <asp:Label CssClass="descLbl" ID="ctrlАдресLabel" runat="server" Text="Адрес" EnableViewState="False">
 </asp:Label>
 <asp:TextBox CssClass="descTxt" ID="ctrlАдрес" runat="server">
@@ -51,7 +51,7 @@
 
 
 </div>
-<div class="clearfix">
+<div class="clearfix4">
   <asp:Label CssClass="descLbl" ID="ctrlДолжностьLabel" runat="server" Text="Должность" EnableViewState="False">
 </asp:Label>
 <asp:TextBox CssClass="descTxt" ID="ctrlДолжность" runat="server">
@@ -63,31 +63,31 @@
 </asp:ScriptManager>
 
 <br/>
-<ac:ShowHideDiv ID="ctrl_fsРабочие_периоды" runat="server" Title="Рабочие_периоды">
+<ac:ShowHideDiv ID="ctrl_fsРабочие_периоды" runat="server" Title="Рабочие_периоды" CssClass="editDetails" >
     <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlРабочийПериод" runat="server" ReadOnly="false" />
 </div>
 
 </ac:ShowHideDiv>
-<ac:ShowHideDiv ID="ctrl_fsСписок_проектов" runat="server" Title="Список_проектов">
+<ac:ShowHideDiv ID="ctrl_fsСписок_проектов" runat="server" Title="Список_проектов" CssClass="editDetails">
     <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlСотрудникПроект" runat="server" ReadOnly="false" />
 </div>
 
 </ac:ShowHideDiv>
-<ac:ShowHideDiv ID="ctrl_fsСписок_аттестаций" runat="server" Title="Список_аттестаций">
+<ac:ShowHideDiv ID="ctrl_fsСписок_аттестаций" runat="server" Title="Список_аттестаций" CssClass="editDetails">
     <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlСписокАттестаций" runat="server" ReadOnly="false" />
 </div>
 
 </ac:ShowHideDiv>
-<ac:ShowHideDiv ID="ctrl_fsИстория_окладов" runat="server" Title="История_окладов">
+<ac:ShowHideDiv ID="ctrl_fsИстория_окладов" runat="server" Title="История_окладов" CssClass="editDetails">
     <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlИсторияОкладов" runat="server" ReadOnly="false" />
 </div>
 
 </ac:ShowHideDiv>
-<ac:ShowHideDiv ID="ctrl_fsИстория_руководителей" runat="server" Title="История_руководителей">
+<ac:ShowHideDiv ID="ctrl_fsИстория_руководителей" runat="server" Title="История_руководителей" CssClass="editDetails">
     <div style="clear: left">
 	<ac:AjaxGroupEdit CssClass="$PERCENTMW$descTxt" ID="ctrlИсторияРуководителей" runat="server" ReadOnly="false" />
 </div>

@@ -16,10 +16,11 @@ namespace IIS.Product_26934
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Business.Audit;
     using ICSSoft.STORMNET.Business.Audit.Objects;
-    
-    
-    // *** Start programmer edit section *** (Using statements)
 
+
+
+    // *** Start programmer edit section *** (Using statements)
+    using ICSSoft.STORMNET.Security;
     // *** End programmer edit section *** (Using statements)
 
 
@@ -88,6 +89,8 @@ namespace IIS.Product_26934
         private System.Nullable<System.DateTime> fEditTime;
         
         private string fEditor;
+        
+        private Agent fAgent;
         
         private IIS.Product_26934.DetailArrayOfСписокАттестаций fСписокАттестаций;
         
@@ -386,6 +389,39 @@ namespace IIS.Product_26934
                 // *** Start programmer edit section *** (Сотрудник.Editor Set end)
 
                 // *** End programmer edit section *** (Сотрудник.Editor Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Сотрудник.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.Agent CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.Agent CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Agent"})]
+        public virtual Agent Agent
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.Agent Get start)
+
+                // *** End programmer edit section *** (Сотрудник.Agent Get start)
+                Agent result = this.fAgent;
+                // *** Start programmer edit section *** (Сотрудник.Agent Get end)
+
+                // *** End programmer edit section *** (Сотрудник.Agent Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.Agent Set start)
+
+                // *** End programmer edit section *** (Сотрудник.Agent Set start)
+                this.fAgent = value;
+                // *** Start programmer edit section *** (Сотрудник.Agent Set end)
+
+                // *** End programmer edit section *** (Сотрудник.Agent Set end)
             }
         }
         

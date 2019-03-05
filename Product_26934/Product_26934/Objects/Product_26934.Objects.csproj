@@ -32,9 +32,22 @@
     <DocumentationFile>bin\Release\Product_26934.Objects.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NewPlatform.Flexberry.Caching, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43b437d0302b56ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Caching.1.0.0\lib\net45\NewPlatform.Flexberry.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b04c483e14c0d306, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.0.0\lib\net45\NewPlatform.Flexberry.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security.BusinessServers, Version=1.0.0.1, Culture=neutral, PublicKeyToken=2a87ddf394e1b26a, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.0.0\lib\net45\NewPlatform.Flexberry.Security.BusinessServers.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security.Objects, Version=1.0.0.1, Culture=neutral, PublicKeyToken=e9e142aba0117561, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.0.0\lib\net45\NewPlatform.Flexberry.Security.Objects.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml">
       <HintPath>System.Xml.dll</HintPath>
     </Reference>
