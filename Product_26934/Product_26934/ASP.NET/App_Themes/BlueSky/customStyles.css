@@ -1,0 +1,25 @@
+﻿.descTxt {
+    width: 100%!important;
+    max-width: initial;
+}
+.descTxt2 {
+    width: 50%!important;
+    max-width: initial;
+}
+.clearfix2{
+    width:45%;
+}
+.clearfix3 {
+    width: 45%;
+    position: relative;
+    left: 50%;
+    bottom: 47px;
+}
+.clearfix4 {
+    position: relative;
+    bottom: 48px;
+}
+.ics-show-hide-div ics-show-hide-div-collapsed-mod {
+    position: relative;
+    bottom: 47px;
+}
