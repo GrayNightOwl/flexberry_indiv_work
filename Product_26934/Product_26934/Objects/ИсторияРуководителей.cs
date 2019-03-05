@@ -43,8 +43,10 @@ namespace IIS.Product_26934
             "КонечнаяДата as \'Конечная дата\'",
             "Руководитель as \'Руководитель\'",
             "Руководитель.ФИО as \'ФИО\'",
+            "ИсторияСотрудника.Agent",
             "ИсторияСотрудника"}, Hidden=new string[] {
             "Руководитель.ФИО",
+            "ИсторияСотрудника.Agent",
             "ИсторияСотрудника"})]
     [MasterViewDefineAttribute("v3_ИсторияРуководителейE", "Руководитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ИсторияРуководителей : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
