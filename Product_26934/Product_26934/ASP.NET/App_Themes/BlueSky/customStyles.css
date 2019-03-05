@@ -8,18 +8,17 @@
 }
 .clearfix2{
     width:45%;
+    display:inline-block;
 }
 .clearfix3 {
     width: 45%;
-    position: relative;
-    /*left: 50%;*/
-    /*bottom: 47px;*/
+    display:inline-block;
 }
 .clearfix4 {
-    position: relative;
+    /*position: relative;*/
     /*bottom: 47px;*/
 }
 .ics-show-hide-div ics-show-hide-div-collapsed-mod {
-    position: relative;
+    /*position: relative;*/
     /*bottom: 47px;*/
 }
