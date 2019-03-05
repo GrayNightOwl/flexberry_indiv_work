@@ -41,7 +41,7 @@ namespace IIS.Product_26934
         /// </summary>
         protected override void Postload()
         {
-            // *** Start programmer edit section *** ({0})
+            // *** Start programmer edit section *** (PostLoad)
 
             ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
             LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
@@ -77,7 +77,7 @@ namespace IIS.Product_26934
             //var клиентыФамилияПетров = DataServiceProvider.DataService.LoadObjects(lcs);
             //WebObjectListView1.LimitFunction = onlyMenFunction;
 
-            // *** End programmer edit section *** ({0})
+            // *** End programmer edit section *** (PostLoad)
         }
 
     }
