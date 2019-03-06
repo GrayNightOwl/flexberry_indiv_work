@@ -43,23 +43,24 @@ namespace IIS.Product_26934
         {
             // *** Start programmer edit section *** (PostLoad)
 
-            ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
-            LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
-            lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
-            View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
-            var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
-            {
-                ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
-                OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
-                View = view,
-                Type = ldef.GetObjectType("Details")
-            };
-            lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExistExact,
-                                                        dvd,
-                                                        ldef.GetFunction(ldef.funcEQ,
-                                                                        new VariableDef(ldef.StringType, "Руководитель.Паспорт"),
-                                                                        Guid.NewGuid()));
-            DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+            //ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
+            //LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
+            //lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
+            //View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
+            //var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
+            //{
+            //    ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
+            //    OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
+            //    View = view,
+            //    Type = ldef.GetObjectType("Details")
+            //};
+            //lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
+            //                                            dvd,
+            //                                            ldef.GetFunction(ldef.funcEQ,
+            //                                                            new VariableDef(ldef.StringType, "Руководитель.ФИО"),
+            //                                                            User.Identity.Name));
+            //DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+            //WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
 
 
 
