@@ -48,7 +48,6 @@ namespace IIS.Product_26934
             "Паспорт as \'Паспорт\'",
             "Адрес as \'Адрес\'",
             "Должность as \'Должность\'",
-            "Agent"}, Hidden=new string[] {
             "Agent"})]
     [AssociatedDetailViewAttribute("v3_СотрудникE", "ИсторияОкладов", "v3_ИсторияОкладовE", true, "-История окладов", "История окладов", true, new string[] {
             ""})]
@@ -60,6 +59,7 @@ namespace IIS.Product_26934
             ""})]
     [AssociatedDetailViewAttribute("v3_СотрудникE", "СписокАттестаций", "v3_СписокАттестацийE", false, "-Список аттестаций", "Список аттестаций", true, new string[] {
             ""})]
+    [MasterViewDefineAttribute("v3_СотрудникE", "Agent", ICSSoft.STORMNET.LookupTypeEnum.Combo, "", "Name")]
     [View("v3_СотрудникL", new string[] {
             "ФИО as \'ФИО\'",
             "ДатаРождения as \'Дата рождения\'",
@@ -69,7 +69,9 @@ namespace IIS.Product_26934
             "CreateTime as \'Создание\'",
             "Creator as \'Создатель\'",
             "EditTime as \'Редактирование\'",
-            "Editor as \'Редактор\'"})]
+            "Editor as \'Редактор\'",
+            "Agent"})]
+    [MasterViewDefineAttribute("v3_СотрудникL", "Agent", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Name")]
     public class Сотрудник : ICSSoft.STORMNET.DataObject, IDataObjectWithAuditFields
     {
         
