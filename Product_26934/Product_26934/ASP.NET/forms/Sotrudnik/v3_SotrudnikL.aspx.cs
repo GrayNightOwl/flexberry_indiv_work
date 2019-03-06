@@ -57,8 +57,8 @@ namespace IIS.Product_26934
             lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExistExact,
                                                         dvd,
                                                         ldef.GetFunction(ldef.funcEQ,
-                                                                        new VariableDef(ldef.StringType, "Руководитель.Agent"),
-                                                                        User.Identity.Name));
+                                                                        new VariableDef(ldef.StringType, "Руководитель.Паспорт"),
+                                                                        Guid.NewGuid()));
             DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
 
 
