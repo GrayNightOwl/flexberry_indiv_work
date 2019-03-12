@@ -36,6 +36,10 @@ namespace IIS.Product_26934
         {
         }
 
+        protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        {
+
+        }
         /// <summary>
         /// Вызывается самым последним в Page_Load.
         /// </summary>
