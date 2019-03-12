@@ -38,7 +38,10 @@ namespace IIS.Product_26934
 
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
-
+            var langdef = ExternalLangDef.LanguageDef;
+            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникL);
+            lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), "Руководитель");
+            var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs);
         }
         /// <summary>
         /// Вызывается самым последним в Page_Load.
