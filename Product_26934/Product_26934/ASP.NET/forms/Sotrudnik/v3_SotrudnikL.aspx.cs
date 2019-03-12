@@ -9,6 +9,7 @@ namespace IIS.Product_26934
     using ICSSoft.STORMNET.FunctionalLanguage.SQLWhere;
     using ICSSoft.STORMNET.Business;
     using Resources;
+    using ClosedXML.Report;
 
     public partial class v3_СотрудникL : BaseListForm<Сотрудник>
     {
@@ -40,8 +41,15 @@ namespace IIS.Product_26934
         {
             var langdef = ExternalLangDef.LanguageDef;
             var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникL);
-            lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), "Руководитель");
+            lcs.LoadingTypes = new Type[] {typeof(Сотрудник)};
+            lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), "");
             var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs);
+
+            const string outputFile = @"D:\SKarimov\report.xlsx";
+            var template = new XLTemplate(@"D:\SKarimov\template.xlsx");
+            template.AddVariable(сотрудникиРуководители);
+            template.Generate();
+            template.SaveAs(outputFile);
         }
         /// <summary>
         /// Вызывается самым последним в Page_Load.
