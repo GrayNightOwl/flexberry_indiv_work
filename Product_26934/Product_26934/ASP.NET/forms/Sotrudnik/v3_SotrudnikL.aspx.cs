@@ -10,6 +10,8 @@ namespace IIS.Product_26934
     using ICSSoft.STORMNET.Business;
     using Resources;
     using ClosedXML.Report;
+    using ClosedXML.Excel;
+    using System.Linq;
 
     public partial class v3_СотрудникL : BaseListForm<Сотрудник>
     {
@@ -39,17 +41,43 @@ namespace IIS.Product_26934
 
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
+
+            var wb = new XLWorkbook();
+            var ws = wb.Worksheets.Add("Inserting Data");
+
             var langdef = ExternalLangDef.LanguageDef;
-            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникL);
-            lcs.LoadingTypes = new Type[] {typeof(Сотрудник)};
+            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
+            lcs.LoadingTypes = new Type[] { typeof(Сотрудник) };
             lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), "");
-            var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs);
+            var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
+            foreach (Сотрудник x in сотрудникиРуководители)
+            {
+                var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList();
+                DateTime diffВремяРаботы = DateTime.Now;
+                if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
+                    diffВремяРаботы = Convert.ToDateTime(РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
+                else
+                    diffВремяРаботы = Convert.ToDateTime(Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count-1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+
+               // ws.Cell(1, 1).InsertData(diffВремяРаботы);
+                ws.Cell(1, 1).Value = diffВремяРаботы;
+                ws.Cell(1, 2).InsertData(x.Должность);
+                ws.Columns().AdjustToContents();
+                wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
+
+            }
+
 
             const string outputFile = @"D:\SKarimov\report.xlsx";
             var template = new XLTemplate(@"D:\SKarimov\template.xlsx");
-            template.AddVariable(сотрудникиРуководители);
+            //template.AddVariable(сотрудникиРуководители);
             template.Generate();
             template.SaveAs(outputFile);
+
+
+            //ws.Cell(1, 1).InsertData(сотрудникиРуководители);
+            ws.Columns().AdjustToContents();
+            wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
         }
         /// <summary>
         /// Вызывается самым последним в Page_Load.
