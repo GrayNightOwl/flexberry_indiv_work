@@ -12,6 +12,7 @@ namespace IIS.Product_26934
     using ClosedXML.Report;
     using ClosedXML.Excel;
     using System.Linq;
+    using System.Collections.Generic;
 
     public partial class v3_СотрудникL : BaseListForm<Сотрудник>
     {
@@ -41,42 +42,42 @@ namespace IIS.Product_26934
 
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
+            List<TimeSpan> ts = new List<TimeSpan>();
+            TimeSpan dTs;
 
             var wb = new XLWorkbook();
             var ws = wb.Worksheets.Add("Inserting Data");
+            
+            List<string> Status = new List<string>();
+            Status.Add("Руководитель");
+            Status.Add("Стажёр");
 
-            var langdef = ExternalLangDef.LanguageDef;
-            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            lcs.LoadingTypes = new Type[] { typeof(Сотрудник) };
-            lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), "");
-            var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
-            foreach (Сотрудник x in сотрудникиРуководители)
+            for (int j =0; j<Status.Count; j++)
             {
-                var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList();
-                DateTime diffВремяРаботы = DateTime.Now;
-                if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
-                    diffВремяРаботы = Convert.ToDateTime(РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
-                else
-                    diffВремяРаботы = Convert.ToDateTime(Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count-1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+                dTs = TimeSpan.Zero;
+                var langdef = ExternalLangDef.LanguageDef;
+                var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
+                lcs.LoadingTypes = new Type[] { typeof(Сотрудник) };
+                lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), Status[j]);
+                var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
+                foreach (Сотрудник x in сотрудникиРуководители)
+                {
 
-               // ws.Cell(1, 1).InsertData(diffВремяРаботы);
-                ws.Cell(1, 1).Value = diffВремяРаботы;
-                ws.Cell(1, 2).InsertData(x.Должность);
+                    var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList();
+                    DateTime diffВремяРаботы = DateTime.Now;
+                    if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
+                        ts.Add(РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
+                    else
+                        ts.Add(Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+
+                }
+                string avg = Convert.ToString(ts.Select(x => x.TotalHours).Average());
+
+
+                ws.Cell(j+1, 1).Value = avg;
+                ws.Cell(j+1, 2).Value = (Status[j]);
                 ws.Columns().AdjustToContents();
-                wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
-
             }
-
-
-            const string outputFile = @"D:\SKarimov\report.xlsx";
-            var template = new XLTemplate(@"D:\SKarimov\template.xlsx");
-            //template.AddVariable(сотрудникиРуководители);
-            template.Generate();
-            template.SaveAs(outputFile);
-
-
-            //ws.Cell(1, 1).InsertData(сотрудникиРуководители);
-            ws.Columns().AdjustToContents();
             wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
         }
         /// <summary>
