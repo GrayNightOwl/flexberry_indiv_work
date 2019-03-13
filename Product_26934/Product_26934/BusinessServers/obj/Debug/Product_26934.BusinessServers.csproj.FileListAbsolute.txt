@@ -71,3 +71,5 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\Busines
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\DocumentFormat.OpenXml.dll
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\ClosedXML.pdb
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\ClosedXML.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\GemBox.Spreadsheet.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\BusinessServers\bin\Debug\GemBox.Spreadsheet.xml

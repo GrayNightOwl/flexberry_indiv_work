@@ -142,3 +142,5 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\DocumentFormat.OpenXml.xml
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\ExcelNumberFormat.xml
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\System.Linq.Dynamic.Core.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\GemBox.Spreadsheet.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\GemBox.Spreadsheet.xml

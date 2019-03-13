@@ -13,6 +13,8 @@ namespace IIS.Product_26934
     using ClosedXML.Excel;
     using System.Linq;
     using System.Collections.Generic;
+    using GemBox.Spreadsheet;
+    using GemBox.Spreadsheet.Charts;
 
     public partial class v3_СотрудникL : BaseListForm<Сотрудник>
     {
@@ -40,45 +42,80 @@ namespace IIS.Product_26934
         {
         }
 
+        protected class statusUptimeClass
+        {
+            public List<string> Status = new List<string>();
+            public List<TimeSpan> uptime = new List<TimeSpan>();
+        }
+
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
-            List<TimeSpan> ts = new List<TimeSpan>();
+
+
+            List<TimeSpan> списокВременРаботы = new List<TimeSpan>();
             TimeSpan dTs;
 
-            var wb = new XLWorkbook();
-            var ws = wb.Worksheets.Add("Inserting Data");
-            
-            List<string> Status = new List<string>();
-            Status.Add("Руководитель");
-            Status.Add("Стажёр");
+            //var wb = new XLWorkbook();
+            //var ws = wb.Worksheets.Add("Inserting Data");
 
-            for (int j =0; j<Status.Count; j++)
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            var workbook = new ExcelFile();
+            var worksheet = workbook.Worksheets.Add("BarChart");
+
+            Status = new List<string>()
+             {
+            "Руководитель",
+            "Стажёр",
+            "Аккаунт"};
+
+            statusUptimeClass statusUptime = new statusUptimeClass();
+
+
+
+            dTs = TimeSpan.Zero;
+            var langdef = ExternalLangDef.LanguageDef;
+            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
+            var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
+
+            foreach (Сотрудник x in списокСотрудников)
             {
-                dTs = TimeSpan.Zero;
-                var langdef = ExternalLangDef.LanguageDef;
-                var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-                lcs.LoadingTypes = new Type[] { typeof(Сотрудник) };
-                lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyPath<Сотрудник>(x => x.Должность)), Status[j]);
-                var сотрудникиРуководители = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
-                foreach (Сотрудник x in сотрудникиРуководители)
+                if (statusUptime.Status.Contains(x.Должность) == false) //если должности нет в списке, то добавим её
                 {
-
-                    var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList();
-                    DateTime diffВремяРаботы = DateTime.Now;
-                    if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
-                        ts.Add(РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
-                    else
-                        ts.Add(Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
-
+                    statusUptime.Status.Add(x.Должность);
                 }
-                string avg = Convert.ToString(ts.Select(x => x.TotalHours).Average());
+                else { }
+
+               TimeSpan времяРаботыОдногоСотрудника;
+               var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList(); //Создаём переменную для рабочих периодов текущего сотрудника
+                if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
+                {
+                    времяРаботыОдногоСотрудника = (РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
+                }
+                else
+                {
+                    времяРаботыОдногоСотрудника = (Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+                }
 
 
-                ws.Cell(j+1, 1).Value = avg;
-                ws.Cell(j+1, 2).Value = (Status[j]);
-                ws.Columns().AdjustToContents();
             }
-            wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
+            var avg = списокВременРаботы.Average(x => x.TotalHours).ToString();
+
+
+            //ws.Cell(j+1, 1).Value = avg;
+            //ws.Cell(j+1, 2).Value = (Status[j]);
+            //ws.Columns().AdjustToContents();
+
+            int number = Status.Count+1; 
+            var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
+            chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, number, 1), true);
+            worksheet.Cells[j,1].Value = Convert.ToDouble(avg);
+            worksheet.Cells[j,0].Value = (Status[j]);
+
+            worksheet.Cells[0, 0].Value = "Время работы";
+            worksheet.Cells[0, 1].Value = "Должность"; 
+
+            workbook.Save("D://SKarimov/insetrtedData.xlsx");
+            //wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
         }
         /// <summary>
         /// Вызывается самым последним в Page_Load.

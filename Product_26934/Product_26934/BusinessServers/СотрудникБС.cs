@@ -42,13 +42,18 @@ namespace IIS.Product_26934
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.Product_26934.Сотрудник UpdatedObject)
         {
             // *** Start programmer edit section *** (OnUpdateСотрудник)
-            var ds = (SQLDataService)DataServiceProvider.DataService;
-            var кредитныеКарты = ds.Query<Сотрудник>(Сотрудник.Views.v3_СотрудникE)
-                                 .Count(k => k.Паспорт == UpdatedObject.Паспорт && k.__PrimaryKey != UpdatedObject.__PrimaryKey );
-            if (кредитныеКарты != 0) throw new Exception("Такой паспорт уже существует в системе");
+            if (UpdatedObject.GetStatus() != ICSSoft.STORMNET.ObjectStatus.Deleted)
+            {
+                var ds = (SQLDataService)DataServiceProvider.DataService;
+                var кредитныеКарты = ds.Query<Сотрудник>(Сотрудник.Views.v3_СотрудникE)
+                                     .Count(k => k.Паспорт == UpdatedObject.Паспорт && k.__PrimaryKey != UpdatedObject.__PrimaryKey);
+                if (кредитныеКарты != 0) throw new Exception("Такой паспорт уже существует в системе");
 
+                return new ICSSoft.STORMNET.DataObject[0];
 
-            return new ICSSoft.STORMNET.DataObject[0];
+            }
+            else
+                return new ICSSoft.STORMNET.DataObject[0];
             // *** End programmer edit section *** (OnUpdateСотрудник)
         }
     }
