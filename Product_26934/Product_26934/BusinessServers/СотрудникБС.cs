@@ -39,21 +39,22 @@ namespace IIS.Product_26934
         // *** Start programmer edit section *** (OnUpdateСотрудник CustomAttributes)
 
         // *** End programmer edit section *** (OnUpdateСотрудник CustomAttributes)
-        public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.Product_26934.Сотрудник UpdatedObject)
+        public virtual ICSSoft.STORMNET.DataObject[] OnUpdateСотрудник(IIS.Product_26934.Сотрудник UpdatedObject) //операция срабатывает на обновление информации о сотруднике
         {
             // *** Start programmer edit section *** (OnUpdateСотрудник)
-            if (UpdatedObject.GetStatus() != ICSSoft.STORMNET.ObjectStatus.Deleted)
+            if (UpdatedObject.GetStatus() != ICSSoft.STORMNET.ObjectStatus.Deleted) //если сотрудник не удаляется, а редактируется/создаётся
             {
                 var ds = (SQLDataService)DataServiceProvider.DataService;
-                var кредитныеКарты = ds.Query<Сотрудник>(Сотрудник.Views.v3_СотрудникE)
+                var количествоПаспортов = ds.Query<Сотрудник>(Сотрудник.Views.v3_СотрудникE) //подисчитывается список аналогичных паспортов
                                      .Count(k => k.Паспорт == UpdatedObject.Паспорт && k.__PrimaryKey != UpdatedObject.__PrimaryKey);
-                if (кредитныеКарты != 0) throw new Exception("Такой паспорт уже существует в системе");
-
-                return new ICSSoft.STORMNET.DataObject[0];
+                if (количествоПаспортов != 0) throw new Exception("Такой паспорт уже существует в системе"); //есои количество паспортов ненулевое - исключение
+                
 
             }
-            else
-                return new ICSSoft.STORMNET.DataObject[0];
+            else //иначе, если производится удаление
+            { }
+            return new ICSSoft.STORMNET.DataObject[0]; //сразу же возвращаем объект с данными
+
             // *** End programmer edit section *** (OnUpdateСотрудник)
         }
     }
