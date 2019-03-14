@@ -26,7 +26,7 @@ namespace IIS.Product_26934
         {
             EditPage = v3_СотрудникE.FormPath;
         }
-                
+
         /// <summary>
         /// Путь до формы.
         /// </summary>
@@ -48,44 +48,34 @@ namespace IIS.Product_26934
             public List<TimeSpan> uptime = new List<TimeSpan>();
         }
 
+        protected class statusTimeInHour
+        {
+            public string Должность;
+            public double среднееВремяРаботы;
+        }
+
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
-
-
-            List<TimeSpan> списокВременРаботы = new List<TimeSpan>();
-            TimeSpan dTs;
-
-            //var wb = new XLWorkbook();
-            //var ws = wb.Worksheets.Add("Inserting Data");
-
-            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY"); //часть, относящаяся к диаграмме
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("BarChart");
-
-            Status = new List<string>()
-             {
-            "Руководитель",
-            "Стажёр",
-            "Аккаунт"};
-
-            statusUptimeClass statusUptime = new statusUptimeClass();
-
-
-
-            dTs = TimeSpan.Zero;
+            
+            var должностьВремя = new statusUptimeClass(); //хранит для КАЖДОГО сотрудника свои должность и время работы
+            var списокУникальныхДолжностей = new List<string>(); //список уникальных должностей, заполняется из базы
+            var должностьВремяРаботыВЧасах = new List<statusTimeInHour>(); //итоговый массив, соответствие должности и среднему времени работы
+            
             var langdef = ExternalLangDef.LanguageDef;
             var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
             var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
-
             foreach (Сотрудник x in списокСотрудников)
             {
-                if (statusUptime.Status.Contains(x.Должность) == false) //если должности нет в списке, то добавим её
+                if (списокУникальныхДолжностей.Contains(x.Должность) == false) //если должности нет в списке, то добавим её
                 {
-                    statusUptime.Status.Add(x.Должность);
+                    списокУникальныхДолжностей.Add(x.Должность);
                 }
                 else { }
 
-               TimeSpan времяРаботыОдногоСотрудника;
+               TimeSpan времяРаботыОдногоСотрудника=TimeSpan.Zero;
                var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList(); //Создаём переменную для рабочих периодов текущего сотрудника
                 if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
                 {
@@ -96,16 +86,41 @@ namespace IIS.Product_26934
                     времяРаботыОдногоСотрудника = (Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
                 }
 
-
+                должностьВремя.Status.Add(x.Должность); //записываем в массив, хранящий всех сотрудников должность и соотв. время работы
+                должностьВремя.uptime.Add(времяРаботыОдногоСотрудника);
             }
-            var avg = списокВременРаботы.Average(x => x.TotalHours).ToString();
 
+            //var должностьВремяИтого = new statusUptimeClass();
+
+
+            foreach (var должность in списокУникальныхДолжностей) //проходим по уникальным должностям
+            {
+                double sum = 0; //обнуляем значение суммы для должности
+                double avg = 0; //обнуляем значение среднего для должности
+                int количествоСотрудниковВДолжности = 0; //обнуляем количество сотрудников в данной должности
+
+                for (int i = 0; i < должностьВремя.Status.Count; i++) //идём по всем записям нашей структуры
+                {
+                    if (должностьВремя.Status[i]==должность) //если сотрудник находится в должности
+                    {
+                        количествоСотрудниковВДолжности++; //увеличиваем счётчик
+                        sum += должностьВремя.uptime[i].TotalHours; //увеличиваем суммарное значение
+                    }
+                }
+                avg = sum / количествоСотрудниковВДолжности;
+
+                statusTimeInHour temp = new statusTimeInHour();
+                temp.Должность = должность;
+                temp.среднееВремяРаботы = avg;
+
+                должностьВремяРаботыВЧасах.Add(temp); //для каждой должности записываем должность и среднее время выходную структуру
+            }
 
             //ws.Cell(j+1, 1).Value = avg;
             //ws.Cell(j+1, 2).Value = (Status[j]);
             //ws.Columns().AdjustToContents();
 
-            int number = Status.Count+1; 
+            //int number = Status.Count+1; 
             var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
             chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, number, 1), true);
             worksheet.Cells[j,1].Value = Convert.ToDouble(avg);
