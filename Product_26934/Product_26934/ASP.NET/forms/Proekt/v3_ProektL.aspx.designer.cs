@@ -11,14 +11,5 @@ namespace IIS.Product_26934 {
     
     
     public partial class v3_ПроектL {
-        
-        /// <summary>
-        /// AuditBtn элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton AuditBtn;
     }
 }
