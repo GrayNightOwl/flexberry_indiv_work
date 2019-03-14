@@ -77,17 +77,27 @@ namespace IIS.Product_26934
 
                TimeSpan времяРаботыОдногоСотрудника=TimeSpan.Zero;
                var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList(); //Создаём переменную для рабочих периодов текущего сотрудника
-                if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null)
+
+
+                if (РабочиеПериоды.Count>0)
                 {
-                    времяРаботыОдногоСотрудника = (РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
+                    if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null) //если для последнего рабочего периода сотрудника дата увольнения не указана
+                    {
+                        времяРаботыОдногоСотрудника = (РабочиеПериоды[0].ДатаПриёма - (DateTime.Now));
+                    }
+                    else
+                    {
+                        времяРаботыОдногоСотрудника = (Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+                    }
+
+                    должностьВремя.Status.Add(x.Должность); //записываем в массив, хранящий всех сотрудников должность и соотв. время работы
+                    должностьВремя.uptime.Add(времяРаботыОдногоСотрудника);
                 }
                 else
                 {
-                    времяРаботыОдногоСотрудника = (Convert.ToDateTime(РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения) - РабочиеПериоды[0].ДатаПриёма);
+
                 }
 
-                должностьВремя.Status.Add(x.Должность); //записываем в массив, хранящий всех сотрудников должность и соотв. время работы
-                должностьВремя.uptime.Add(времяРаботыОдногоСотрудника);
             }
 
             //var должностьВремяИтого = new statusUptimeClass();
@@ -121,17 +131,23 @@ namespace IIS.Product_26934
             //ws.Columns().AdjustToContents();
 
             //int number = Status.Count+1; 
-            var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
-            chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, number, 1), true);
-            worksheet.Cells[j,1].Value = Convert.ToDouble(avg);
-            worksheet.Cells[j,0].Value = (Status[j]);
 
-            worksheet.Cells[0, 0].Value = "Время работы";
-            worksheet.Cells[0, 1].Value = "Должность"; 
+            for (int i = 0; i < должностьВремяРаботыВЧасах.Count;i++)
+            {
+                var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
+                chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, 5, 1), true);
+                worksheet.Cells[i+1, 0].Value = Convert.ToDouble(должностьВремяРаботыВЧасах[i].среднееВремяРаботы);
+                worksheet.Cells[i+1, 1].Value = (должностьВремяРаботыВЧасах[i].Должность);
 
-            workbook.Save("D://SKarimov/insetrtedData.xlsx");
-            //wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
+                worksheet.Cells[0, 0].Value = "Время работы";
+                worksheet.Cells[0, 1].Value = "Должность";
+
+            }
+
+        workbook.Save("D://SKarimov/insetrtedData.xlsx");
+        //wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
         }
+
         /// <summary>
         /// Вызывается самым последним в Page_Load.
         /// </summary>
@@ -139,24 +155,24 @@ namespace IIS.Product_26934
         {
             // *** Start programmer edit section *** (PostLoad)
 
-            ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
-            LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
-            lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
-            View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
-            var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
-            {
-                ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
-                OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
-                View = view,
-                Type = ldef.GetObjectType("Details")
-            };
-            lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
-                                                        dvd,
-                                                        ldef.GetFunction(ldef.funcEQ,
-                                                                        new VariableDef(ldef.StringType, "Руководитель.Agent.Login"),
-                                                                        User.Identity.Name));
-            DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
-            WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
+            //ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
+            //LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
+            //lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
+            //View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
+            //var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
+            //{
+            //    ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
+            //    OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
+            //    View = view,
+            //    Type = ldef.GetObjectType("Details")
+            //};
+            //lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
+            //                                            dvd,
+            //                                            ldef.GetFunction(ldef.funcEQ,
+            //                                                            new VariableDef(ldef.StringType, "Руководитель.Agent.Login"),
+            //                                                            User.Identity.Name));
+            //DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+            //WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
 
 
 
