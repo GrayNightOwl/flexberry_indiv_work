@@ -64,9 +64,30 @@ namespace IIS.Product_26934
             var списокУникальныхДолжностей = new List<string>(); //список уникальных должностей, заполняется из базы
             var должностьВремяРаботыВЧасах = new List<statusTimeInHour>(); //итоговый массив, соответствие должности и среднему времени работы
             
-            var langdef = ExternalLangDef.LanguageDef;
-            var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
+            //var langdef = ExternalLangDef.LanguageDef;
+            //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
+            //var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
+
+            ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
+            LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
+            lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
+            View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
+            var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
+            {
+                ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
+                OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
+                View = view,
+                Type = ldef.GetObjectType("Details")
+            };
+            lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
+                                                        dvd,
+                                                        ldef.GetFunction(ldef.funcEQ,
+                                                                        new VariableDef(ldef.StringType, "Руководитель.Agent.Login"),
+                                                                        User.Identity.Name));
+            var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+
+
+
             foreach (Сотрудник x in списокСотрудников)
             {
                 if (списокУникальныхДолжностей.Contains(x.Должность) == false) //если должности нет в списке, то добавим её
@@ -155,24 +176,24 @@ namespace IIS.Product_26934
         {
             // *** Start programmer edit section *** (PostLoad)
 
-            //ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
-            //LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
-            //lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
-            //View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
-            //var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
-            //{
-            //    ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
-            //    OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
-            //    View = view,
-            //    Type = ldef.GetObjectType("Details")
-            //};
-            //lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
-            //                                            dvd,
-            //                                            ldef.GetFunction(ldef.funcEQ,
-            //                                                            new VariableDef(ldef.StringType, "Руководитель.Agent.Login"),
-            //                                                            User.Identity.Name));
-            //DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
-            //WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
+            ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
+            LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");
+            lcsСервер.LoadingTypes = new[] { typeof(Сотрудник) };
+            View view = Information.GetView("v3_ИсторияРуководителейE", typeof(ИсторияРуководителей));
+            var dvd = new ICSSoft.STORMNET.Windows.Forms.DetailVariableDef
+            {
+                ConnectMasterPorp = nameof(ИсторияРуководителей.ИсторияСотрудника),
+                OwnerConnectProp = new[] { SQLWhereLanguageDef.StormMainObjectKey },
+                View = view,
+                Type = ldef.GetObjectType("Details")
+            };
+            lcsСервер.LimitFunction = ldef.GetFunction(ldef.funcExist,
+                                                        dvd,
+                                                        ldef.GetFunction(ldef.funcEQ,
+                                                                        new VariableDef(ldef.StringType, "Руководитель.Agent.Login"),
+                                                                        User.Identity.Name));
+            DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
+            WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
 
 
 
