@@ -56,6 +56,10 @@ namespace IIS.Product_26934
 
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
+
+
+
+
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY"); //часть, относящаяся к диаграмме
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("BarChart");
@@ -142,7 +146,7 @@ namespace IIS.Product_26934
 
                 statusTimeInHour temp = new statusTimeInHour();
                 temp.Должность = должность;
-                temp.среднееВремяРаботы = avg;
+                temp.среднееВремяРаботы = Math.Abs(avg);
 
                 должностьВремяРаботыВЧасах.Add(temp); //для каждой должности записываем должность и среднее время выходную структуру
             }

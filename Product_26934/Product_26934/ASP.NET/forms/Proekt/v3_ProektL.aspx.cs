@@ -38,5 +38,14 @@ namespace IIS.Product_26934
         protected override void Postload()
         {
         }
+
+
+        protected void AuditBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        {
+            //Response.Redirect("~/flexberry/AuditEntitiesList/");
+            Response.Redirect("/BarController/");
+        }
+
+
     }
 }

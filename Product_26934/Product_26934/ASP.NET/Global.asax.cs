@@ -7,12 +7,18 @@ namespace ICSSoft.STORMNET.Web
     using System.Web.Routing;
     using System.Web.SessionState;
 
+
+
+    using System.Web.Mvc;
+    using System.Web.Optimization;
+
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Web;
     using ICSSoft.STORMNET.Web.Tools;
     using ICSSoft.STORMNET.Web.Tools.Monads;
 
     using global::Resources;
+    using IIS.Product_26934;
 
     /// <summary>
     /// Класс ASP.NET приложения.
@@ -54,6 +60,13 @@ namespace ICSSoft.STORMNET.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             ServiceConfig.ConfigureServices();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+
+
+            AreaRegistration.RegisterAllAreas();
+            RouteConfig2.RegisterRoutes(RouteTable.Routes);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
         /// <summary>

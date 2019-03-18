@@ -1,0 +1,41 @@
+﻿@{
+    //ViewBag.Title = "Bar Chart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Bar Chart</h2>
+<br />
+<div id="divBarChart" style="width:600px; height:300px">
+</div>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+
+   $(document).ready(function () {
+     //Load Data Here
+     var chartData = null;
+     $.ajax({
+       url: '/Home/GetChartData',
+       type: 'GET',
+       dataType: 'json',
+       data: '',
+       success: function (d) {
+         chartData = d;
+       },
+       error: function () {
+         alert('Error!');
+       }
+     }).done(function () {
+       drawBarChart(chartData);
+     });
+   });
+   function drawBarChart(chartData) {
+     var data = google.visualization.arrayToDataTable(chartData);
+     var options = {
+       title: "Category",
+       pointSize: 5,
+       is3D: true
+     };
+     var barChart = new google.visualization.BarChart(document.getElementById('divBarChart'));
+     barChart.draw(data, options);
+   }
+   google.load('visualization', '1', { packages: ['corechart'] });
+</script>  
