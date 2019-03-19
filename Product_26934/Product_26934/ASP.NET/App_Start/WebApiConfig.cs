@@ -21,8 +21,8 @@ namespace ICSSoft.STORMNET.Web
             // что HTTP-модуль WebApiSessionModule не сможет распознать запросы к ним как запросы к WebAPI,
             // и у прикладных контроллеров не будет доступа к сессии текущего пользователя.   
 
-            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{action}");
-            config.Routes.MapHttpRoute("GetDataChart", "api/Bar/ResetPassword");
+            config.Routes.MapHttpRoute("DefaultApi", "myapi/{controller}/{action}");
+            //config.Routes.MapHttpRoute("GetDataChart", "api/Bar/ResetPassword");
             config.MapHttpAttributeRoutes();
         }
     }

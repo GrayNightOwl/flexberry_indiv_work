@@ -13,7 +13,6 @@
   <head>
     <!--Load the AJAX API-->
       
-        диаграмма, появись
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -29,7 +28,7 @@
 
 
       var jsonData = $.ajax({
-          url: "~/api/Bar/ResetPassword",
+          url: "myapi/Bar/ResetPassword",
           dataType: "json",
           async: false,
           success: function (data, status, xhr) {
@@ -67,6 +66,7 @@
 
   <body>
     <!--Div that will hold the pie chart-->
+        диаграмма, появись
     <div id="chart_div"></div>
   </body>
 
