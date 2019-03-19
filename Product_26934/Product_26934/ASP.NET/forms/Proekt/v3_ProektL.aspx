@@ -13,7 +13,7 @@
             
   <head>
     <!--Load the AJAX API-->
- <%--     
+      
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -64,11 +64,11 @@
       <div id="chart_div" style="width:600px;height:400px">
       
 
-    </div>--%>
+    </div>
 
 
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<%--    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
     
@@ -133,7 +133,7 @@
     <!--Div that will hold the pie chart-->
         диаграмма, появись
     <div id="chart_div"></div>
-  </body>
+  </body>--%>
 
 
             
