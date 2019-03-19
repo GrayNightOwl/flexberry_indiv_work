@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
-
+using System.Web.Http;
 using ICSSoft.STORMNET;
 using ICSSoft.STORMNET.Windows.Forms;
 using ICSSoft.STORMNET.Web.Controls;
@@ -16,47 +15,77 @@ using ClosedXML.Excel;
 using GemBox.Spreadsheet;
 using GemBox.Spreadsheet.Charts;
 using IIS.Product_26934.Models;
+using System.Web.Http.Results;
 
 namespace IIS.Product_26934.forms
 {
 
 
-    public class BarController : Controller
+    public class BarController : ApiController
     {
-        private List<BarChartClass> PopulateSaleCategory()
+        public List<BarChartClass> PopulateSaleCategory()
         {
             var saleCategories = new List<BarChartClass>()
-   {
-     new BarChartClass(){Id=1, Category="Apparel", Amount=45000},
-     new BarChartClass(){Id=2, Category="Baby Products", Amount=32000},
-     new BarChartClass(){Id=3, Category="Beauty", Amount=51000},
-     new BarChartClass(){Id=4, Category="Electronic", Amount=44000},
-     new BarChartClass(){Id=5, Category="HealthCare", Amount=63000}
-
-   };
+            {
+               new BarChartClass(){Id=1, Category="Apparel", Amount=45000},
+               new BarChartClass(){Id=2, Category="Baby Products", Amount=32000},
+               new BarChartClass(){Id=3, Category="Beauty", Amount=51000},
+               new BarChartClass(){Id=4, Category="Electronic", Amount=44000},
+               new BarChartClass(){Id=5, Category="HealthCare", Amount=63000}
+            
+            };
             return saleCategories;
         }
 
 
-        public ActionResult Index()
-        {
-            return View("~/Views/BarChart.cshtml");
-        }
+        //public ActionResult Index()
+        //{
+        //    return View("~/Views/BarChart.cshtml");
+        //}
 
-
-        public JsonResult GetChartData()
+        [HttpGet]
+        public IHttpActionResult ResetPassword()
         {
             var sales = PopulateSaleCategory();
             var chartData = new object[sales.Count + 1];
-            chartData[0] = new object[]{"Category","Amount"};
+            chartData[0] = new object[] { "Category", "Amount" };
             int j = 0;
             foreach (var i in sales)
             {
                 j++;
                 chartData[j] = new object[] { i.Category, i.Amount };
             }
-            return new JsonResult { Data = chartData, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+            return Json(chartData);
         }
+
+
+        //[HttpGet]
+        //public JsonResult<PopulateSaleCategory> GetChartData()
+        //{
+
+        //    //var data = new google.visualization.DataTable();
+        //    //data.addColumn('string', 'Topping');
+        //    //data.addColumn('number', 'Slices');
+        //    //data.addRows([
+        //    //    ['Mushrooms', 3],
+        //    //    ['Onions', 1],
+        //    //    ['Olives', 1],
+        //    //    ['Zucchini', 1],
+        //    //    ['Pepperoni', 2]
+        //    //]);
+
+
+        //    var sales = PopulateSaleCategory();
+        //    var chartData = new object[sales.Count + 1];
+        //    chartData[0] = new object[]{"Category","Amount"};
+        //    int j = 0;
+        //    foreach (var i in sales)
+        //    {
+        //        j++;
+        //        chartData[j] = new object[] { i.Category, i.Amount };
+        //    }
+        //    return new JsonResult { Data = chartData, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+        //}
 
 
 

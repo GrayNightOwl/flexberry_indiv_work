@@ -12,9 +12,12 @@
             
   <head>
     <!--Load the AJAX API-->
+      
+        диаграмма, появись
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
+
     
     // Load the Visualization API and the piechart package.
     google.charts.load('current', {'packages':['corechart']});
@@ -23,14 +26,35 @@
     google.charts.setOnLoadCallback(drawChart);
       
     function drawChart() {
+
+
       var jsonData = $.ajax({
-          url: "/BarController/",
+          url: "~/api/Bar/ResetPassword",
           dataType: "json",
-          async: false
+          async: false,
+          success: function (data, status, xhr) {
+              debugger;
+          },
+          error: function () {
+              debugger;
+          },
           }).responseText;
           
       // Create our data table out of JSON data loaded from server.
-      var data = new google.visualization.DataTable(jsonData);
+        var data = new google.visualization.DataTable(jsonData);
+
+        //var data = new google.visualization.DataTable();
+        //data.addColumn('string', 'Topping');
+        //data.addColumn('number', 'Slices');
+        //data.addRows([
+        //    ['Mushrooms', 3],
+        //    ['Onions', 1],
+        //    ['Olives', 1],
+        //    ['Zucchini', 1],
+        //    ['Pepperoni', 2]
+        //]);
+
+
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
