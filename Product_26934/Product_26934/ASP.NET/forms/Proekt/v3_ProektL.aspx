@@ -35,7 +35,8 @@
           success: function (data, status, xhr) {
               debugger;
           },
-          error: function () {
+          error: function (data, status, xhr) {
+              alert("произошла ошибка");
               debugger;
           },
           }).responseText;
@@ -106,6 +107,7 @@
   <body>
     <div id="barchart_material" style="width: 900px; height: 500px;"></div>
   </body>--%>
+
 
 
 

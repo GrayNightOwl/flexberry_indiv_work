@@ -3,8 +3,18 @@ namespace IIS.Product_26934
 {
     using System;
     using ICSSoft.STORMNET.Web.Controls;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using System.Web.Script.Services;
+    using System.Web.Services;
+    using System.Web.UI;
+    using IIS.Product_26934;
+    using System.Web.UI.WebControls;
 
     using Resources;
+    using IIS.Product_26934.Models;
+
 
     public partial class v3_ПроектL : BaseListForm<Проект>
     {
@@ -16,7 +26,7 @@ namespace IIS.Product_26934
         {
             EditPage = v3_ПроектE.FormPath;
         }
-                
+
         /// <summary>
         /// Путь до формы.
         /// </summary>
@@ -45,7 +55,5 @@ namespace IIS.Product_26934
             //Response.Redirect("~/flexberry/AuditEntitiesList/");
             Response.Redirect("/BarController/");
         }
-
-
     }
 }
