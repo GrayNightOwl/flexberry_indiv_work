@@ -162,3 +162,5 @@ D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\System.Web.WebPages.xml
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\System.Web.WebPages.Deployment.xml
 D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\System.Web.WebPages.Razor.xml
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\SKarimov\Индивидуалка\CodeGen\Product_26934\Product_26934\ASP.NET\bin\Microsoft.AspNet.FriendlyUrls.xml

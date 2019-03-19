@@ -1,6 +1,10 @@
 ﻿namespace ICSSoft.STORMNET.Web
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Web;
     using System.Web.Routing;
+    using Microsoft.AspNet.FriendlyUrls;
 
     using ICSSoft.STORMNET.Web.Tools;
 
@@ -64,6 +68,10 @@
             routes.AddDynamicPageRoute("flexberry/Version", DynamicPageIdentifier.Version);
 
             routes.AddDynamicPageRoute("flexberry/Cache", DynamicPageIdentifier.CacheAdmin);
+
+            var settings = new FriendlyUrlSettings();
+            settings.AutoRedirectMode = RedirectMode.Off; // RedirectMode.Permanent  
+            routes.EnableFriendlyUrls(settings);
         }
     }
 }
