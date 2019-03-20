@@ -170,41 +170,7 @@ namespace IIS.Product_26934.forms
             }
             return Json(outputData);
 
-
-            //var sales = PopulateSaleCategory();
-            //var chartData = new object[sales.Count + 1];
-            //chartData[0] = new object[] { "Category", "Amount" };
-            //int j = 0;
-            //foreach (var i in sales)
-            //{
-            //    j++;
-            //    chartData[j] = new object[] { i.Category, i.Amount };
-            //}
-            //return Json(chartData);
-
-
-            //ws.Cell(j+1, 1).Value = avg;
-            //ws.Cell(j+1, 2).Value = (Status[j]);
-            //ws.Columns().AdjustToContents();
-
-            //int number = Status.Count+1; 
-
-            //for (int i = 0; i < должностьВремяРаботыВЧасах.Count; i++)
-            //{
-            //    var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
-            //    chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, 5, 1), true);
-            //    worksheet.Cells[i + 1, 0].Value = Convert.ToDouble(должностьВремяРаботыВЧасах[i].среднееВремяРаботы);
-            //    worksheet.Cells[i + 1, 1].Value = (должностьВремяРаботыВЧасах[i].Должность);
-
-            //    worksheet.Cells[0, 0].Value = "Время работы";
-            //    worksheet.Cells[0, 1].Value = "Должность";
-
-            //}
-
-            //workbook.Save("D://SKarimov/insetrtedData.xlsx");
-            ////wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
-
-
+            
         }
     }
 }

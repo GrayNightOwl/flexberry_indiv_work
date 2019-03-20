@@ -198,22 +198,7 @@ namespace IIS.Product_26934
                                                                         User.Identity.Name));
             DataObject[] dobjsСервер = DataServiceProvider.DataService.LoadObjects(lcsСервер);
             WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
-
-
-
-
-            //// User.Identity.Name
-            ////var langdef = ExternalLangDef.LanguageDef;
-            //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            ////lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-            ////                new VariableDef(langdef.GuidType, Information.ExtractPropertyPath<Сотрудник>(x => x.)), "64F45BC3-339B-4FBA-A036-C5E9FE9EAE53");
-            ////var кредиты = DataServiceProvider.DataService.LoadObjects(lcs);
-
-            //var ld = SQLWhereLanguageDef.LanguageDef;
-            //var onlyMenFunction = ld.GetFunction(ld.funcEQ, new VariableDef(ld.StringType,
-            //    Information.ExtractPropertyPath<ИсторияРуководителей>(x => x.ИсторияСотрудника.ФИО)), User.Identity.Name);
-            //var клиентыФамилияПетров = DataServiceProvider.DataService.LoadObjects(lcs);
-            //WebObjectListView1.LimitFunction = onlyMenFunction;
+            
 
             // *** End programmer edit section *** (PostLoad)
         }
