@@ -13,7 +13,6 @@
             
   <head>
     <!--Load the AJAX API-->
-      
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -26,16 +25,17 @@
         $(document).ready(function () {
 
                 $.ajax({
-                    url: "myapi/Bar/GetChartData",
+                    url: 'myapi/Bar/GetChartData',
                     data: "",
-                    dataType: "json",
-                    type: "GET",
+                    dataType: 'JSON',
+                    type: 'GET',
                     contentType: "application/json; chartset=utf-8",
                     success: function (data) {
                         chartData = data.d;
                     },
                     error: function () {
                         alert("Error loading data! Please try again.");
+                        debugger;
                     }
                 }).done(function () {
                     // after complete loading data
@@ -84,7 +84,7 @@
             var jsonData =
             $.ajax
                 ({
-                url: "myapi/Bar/ResetPassword",
+                url: "myapi/Bar/GetChartData",
                 dataType: "json",
                 async: false,
                 success: function (data, status, xhr) {

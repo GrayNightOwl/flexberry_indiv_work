@@ -57,7 +57,7 @@ namespace IIS.Product_26934.forms
         }
 
         [HttpGet]
-        public IHttpActionResult ResetPassword()
+        public IHttpActionResult GetChartData()
         {
 
 
