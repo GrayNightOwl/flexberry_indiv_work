@@ -166,7 +166,7 @@ namespace IIS.Product_26934.forms
             foreach (var i in должностьВремяРаботыВЧасах)
             {
                 j++;
-                outputData[j] = new object[] { i.Должность, i.среднееВремяРаботы };
+                outputData[j] = new object[] { i.Должность, Convert.ToInt32(i.среднееВремяРаботы) };
             }
             return Json(outputData);
 

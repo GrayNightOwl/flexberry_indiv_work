@@ -25,16 +25,17 @@
         $(document).ready(function () {
 
                 $.ajax({
-                    url: 'myapi/Bar/GetChartData',
+                    url: '/myapi/Bar/GetChartData',
                     data: "",
                     dataType: 'JSON',
                     type: 'GET',
                     contentType: "application/json; chartset=utf-8",
                     success: function (data) {
-                        chartData = data.d;
+                        chartData = data;
                     },
-                    error: function () {
+                    error: function (jqXHR,textStatus,errorThrown) {
                         alert("Error loading data! Please try again.");
+                        console.log(textStatus);
                         debugger;
                     }
                 }).done(function () {

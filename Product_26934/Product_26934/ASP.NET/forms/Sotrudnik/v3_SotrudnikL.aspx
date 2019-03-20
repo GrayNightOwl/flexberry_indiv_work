@@ -6,8 +6,8 @@
     <div class="<%= Constants.FormCssClass + " " + Constants.ListFormCssClass %>">
         <h2 class="<%= Constants.FormHeaderCssClass + " " + Constants.ListFormHeaderCssClass %>">Сотрудник</h2>
         <div class="<%= Constants.FormControlsCssClass + " " + Constants.ListFormControlsCssClass %>">
-            <asp:ImageButton ID="ReportBtn" runat="server" ImageUrl="~\App_Themes\BlueSky\Pages\EditPage\Images\audit.png" OnClick="ReportBtn_Click" AlternateText="Отчёт" />
-
+            <asp:ImageButton ID="AuditBtn" runat="server" ImageUrl="~/App_Themes/BlueSky/Pages/EditPage/Images/audit.png" OnClick="AuditBtn_Click" AlternateText="Аудит"/>
+            
 
             <ac:WebObjectListView ID="WebObjectListView1" runat="server" Visible="true" />
             
