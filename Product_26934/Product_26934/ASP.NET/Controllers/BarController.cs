@@ -22,27 +22,6 @@ namespace IIS.Product_26934.forms
 
     public class BarController : ApiController
     {
-        //public List<BarChartClass> PopulateSaleCategory()
-        //{
-        //    var saleCategories = new List<BarChartClass>()
-        //    {
-        //       new BarChartClass(){Id=1, Category="Apparel", Amount=45000},
-        //       new BarChartClass(){Id=2, Category="Baby Products", Amount=32000},
-        //       new BarChartClass(){Id=3, Category="Beauty", Amount=51000},
-        //       new BarChartClass(){Id=4, Category="Electronic", Amount=44000},
-        //       new BarChartClass(){Id=5, Category="HealthCare", Amount=63000}
-
-        //    };
-        //    return saleCategories;
-        //}
-
-
-        //public ActionResult Index()
-        //{
-        //    return View("~/Views/BarChart.cshtml");
-        //}
-
-        //[HttpGet]
         protected class statusUptimeClass
         {
             public List<string> Status = new List<string>();
@@ -59,21 +38,9 @@ namespace IIS.Product_26934.forms
         public IHttpActionResult GetChartData()
         {
 
-
-
-
-
-
-
-
-
             var должностьВремя = new statusUptimeClass(); //хранит для КАЖДОГО сотрудника свои должность и время работы
             var списокУникальныхДолжностей = new List<string>(); //список уникальных должностей, заполняется из базы
             var должностьВремяРаботыВЧасах = new List<statusTimeInHour>(); //итоговый массив, соответствие должности и среднему времени работы
-
-            //var langdef = ExternalLangDef.LanguageDef;
-            //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            //var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
 
             ExternalLangDef ldef = ICSSoft.STORMNET.Windows.Forms.ExternalLangDef.LanguageDef;
             LoadingCustomizationStruct lcsСервер = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), "v3_СотрудникE");

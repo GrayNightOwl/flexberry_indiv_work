@@ -11,19 +11,20 @@
 
 /* Шапка. */
 .@{pageHeaderClass} {
-  color: @header-text-color;
+    color: @header-text-color;
 
-  &-image {
-      padding: 5px;
-      border: 2px solid #fff;
-      .border-radius(15px);
-      background-color: #fff;
-      box-shadow: 1px 1px 10px #3f65a4;
-  }
+    &-image {
+        padding: 5px;
+        border: 2px solid #fff;
+        .border-radius(15px);
+        background-color: #fff;
+        background-image: url(Images/app-logo2.png);
+        box-shadow: 1px 1px 10px #3f65a4;
+    }
 
     a {
         &:focus {
-          color: @header-text-color;
+            color: @header-text-color;
         }
     }
 
@@ -33,7 +34,7 @@
             vertical-align: middle;
 
             &:hover {
-              color: @header-text-color;
+                color: @header-text-color;
             }
         }
     }
@@ -41,21 +42,23 @@
     &-userbar {
         vertical-align: middle;
         margin: 50px -20px 0 0;
+
         a {
             color: @header-text-color;
             font-size: 0px;
             margin-right: 45px;
             vertical-align: middle;
-            &:before
-            {
-              margin: 0 0 0 15px;
-              font-size: 16px;
-              vertical-align: middle;
-              font-family: 'BlueSky';
-              content: "\e81e";
+
+            &:before {
+                margin: 0 0 0 15px;
+                font-size: 16px;
+                vertical-align: middle;
+                font-family: 'BlueSky';
+                content: "\e81e";
             }
+
             &:hover {
-              color: @header-text-color;
+                color: @header-text-color;
             }
         }
     }
