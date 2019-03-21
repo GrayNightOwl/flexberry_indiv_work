@@ -20,9 +20,11 @@ namespace ICSSoft.STORMNET.Web
             // Обязательно с каким-либо префиксом вроде "api/", без префикса есть вероятность,
             // что HTTP-модуль WebApiSessionModule не сможет распознать запросы к ним как запросы к WebAPI,
             // и у прикладных контроллеров не будет доступа к сессии текущего пользователя.   
-            //config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{action}");
+            config.Routes.MapHttpRoute("BarApi", "myapi/{controller}/{action}");
             
             config.MapHttpAttributeRoutes();
+            
+
         }
     }
 }

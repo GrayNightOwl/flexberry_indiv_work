@@ -56,14 +56,18 @@ namespace IIS.Product_26934
 
         protected void ReportBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
         {
+
+
+
+
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY"); //часть, относящаяся к диаграмме
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("BarChart");
-            
+
             var должностьВремя = new statusUptimeClass(); //хранит для КАЖДОГО сотрудника свои должность и время работы
             var списокУникальныхДолжностей = new List<string>(); //список уникальных должностей, заполняется из базы
             var должностьВремяРаботыВЧасах = new List<statusTimeInHour>(); //итоговый массив, соответствие должности и среднему времени работы
-            
+
             //var langdef = ExternalLangDef.LanguageDef;
             //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
             //var списокСотрудников = DataServiceProvider.DataService.LoadObjects(lcs).ToList();
@@ -96,11 +100,11 @@ namespace IIS.Product_26934
                 }
                 else { }
 
-               TimeSpan времяРаботыОдногоСотрудника=TimeSpan.Zero;
-               var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList(); //Создаём переменную для рабочих периодов текущего сотрудника
+                TimeSpan времяРаботыОдногоСотрудника = TimeSpan.Zero;
+                var РабочиеПериоды = x.РабочийПериод.Cast<РабочийПериод>().ToList(); //Создаём переменную для рабочих периодов текущего сотрудника
 
 
-                if (РабочиеПериоды.Count>0)
+                if (РабочиеПериоды.Count > 0)
                 {
                     if (РабочиеПериоды[РабочиеПериоды.Count - 1].ДатаУвольнения == null) //если для последнего рабочего периода сотрудника дата увольнения не указана
                     {
@@ -132,7 +136,7 @@ namespace IIS.Product_26934
 
                 for (int i = 0; i < должностьВремя.Status.Count; i++) //идём по всем записям нашей структуры
                 {
-                    if (должностьВремя.Status[i]==должность) //если сотрудник находится в должности
+                    if (должностьВремя.Status[i] == должность) //если сотрудник находится в должности
                     {
                         количествоСотрудниковВДолжности++; //увеличиваем счётчик
                         sum += должностьВремя.uptime[i].TotalHours; //увеличиваем суммарное значение
@@ -142,7 +146,7 @@ namespace IIS.Product_26934
 
                 statusTimeInHour temp = new statusTimeInHour();
                 temp.Должность = должность;
-                temp.среднееВремяРаботы = avg;
+                temp.среднееВремяРаботы = Math.Abs(avg);
 
                 должностьВремяРаботыВЧасах.Add(temp); //для каждой должности записываем должность и среднее время выходную структуру
             }
@@ -153,20 +157,20 @@ namespace IIS.Product_26934
 
             //int number = Status.Count+1; 
 
-            for (int i = 0; i < должностьВремяРаботыВЧасах.Count;i++)
+            for (int i = 0; i < должностьВремяРаботыВЧасах.Count; i++)
             {
                 var chart = worksheet.Charts.Add(ChartType.Bar, "D2", "M25");
                 chart.SelectData(worksheet.Cells.GetSubrangeAbsolute(0, 0, 5, 1), true);
-                worksheet.Cells[i+1, 0].Value = Convert.ToDouble(должностьВремяРаботыВЧасах[i].среднееВремяРаботы);
-                worksheet.Cells[i+1, 1].Value = (должностьВремяРаботыВЧасах[i].Должность);
+                worksheet.Cells[i + 1, 0].Value = Convert.ToDouble(должностьВремяРаботыВЧасах[i].среднееВремяРаботы);
+                worksheet.Cells[i + 1, 1].Value = (должностьВремяРаботыВЧасах[i].Должность);
 
                 worksheet.Cells[0, 0].Value = "Время работы";
                 worksheet.Cells[0, 1].Value = "Должность";
 
             }
 
-        workbook.Save("D://SKarimov/insetrtedData.xlsx");
-        //wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
+            workbook.Save("D://SKarimov/insetrtedData.xlsx");
+            //wb.SaveAs("D://SKarimov/insetrtedData.xlsx");
         }
 
         /// <summary>
@@ -196,23 +200,15 @@ namespace IIS.Product_26934
             WebObjectListView1.LimitFunction = lcsСервер.LimitFunction;
 
 
-
-
-            //// User.Identity.Name
-            ////var langdef = ExternalLangDef.LanguageDef;
-            //var lcs = LoadingCustomizationStruct.GetSimpleStruct(typeof(Сотрудник), Сотрудник.Views.v3_СотрудникE);
-            ////lcs.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-            ////                new VariableDef(langdef.GuidType, Information.ExtractPropertyPath<Сотрудник>(x => x.)), "64F45BC3-339B-4FBA-A036-C5E9FE9EAE53");
-            ////var кредиты = DataServiceProvider.DataService.LoadObjects(lcs);
-
-            //var ld = SQLWhereLanguageDef.LanguageDef;
-            //var onlyMenFunction = ld.GetFunction(ld.funcEQ, new VariableDef(ld.StringType,
-            //    Information.ExtractPropertyPath<ИсторияРуководителей>(x => x.ИсторияСотрудника.ФИО)), User.Identity.Name);
-            //var клиентыФамилияПетров = DataServiceProvider.DataService.LoadObjects(lcs);
-            //WebObjectListView1.LimitFunction = onlyMenFunction;
-
             // *** End programmer edit section *** (PostLoad)
         }
+
+
+        protected void AuditBtn_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        {
+            Response.Redirect("~/flexberry/AuditEntitiesList/");
+        }
+
 
     }
 }

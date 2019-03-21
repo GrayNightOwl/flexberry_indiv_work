@@ -6,8 +6,8 @@
     <div class="<%= Constants.FormCssClass + " " + Constants.ListFormCssClass %>">
         <h2 class="<%= Constants.FormHeaderCssClass + " " + Constants.ListFormHeaderCssClass %>">Сотрудник</h2>
         <div class="<%= Constants.FormControlsCssClass + " " + Constants.ListFormControlsCssClass %>">
-            <asp:ImageButton ID="ReportBtn" runat="server" ImageUrl="~\App_Themes\BlueSky\Pages\EditPage\Images\audit.png" OnClick="ReportBtn_Click" AlternateText="Отчёт" />
-
+            <asp:ImageButton ID="AuditBtn" runat="server" ImageUrl="~/App_Themes/BlueSky/Pages/EditPage/Images/audit.png" OnClick="AuditBtn_Click" AlternateText="Аудит"/>
+            
 
             <ac:WebObjectListView ID="WebObjectListView1" runat="server" Visible="true" />
             
@@ -16,4 +16,63 @@
 
         </div>
     </div>
+
+    
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+            var chartData; // globar variable for hold chart data
+        google.load("visualization", "1", {packages: ["corechart"] });
+
+        // Here We will fill chartData
+
+        $(document).ready(function () {
+
+                $.ajax({
+                    url: '/myapi/Bar/GetChartData',
+                    data: "",
+                    dataType: 'JSON',
+                    type: 'GET',
+                    contentType: "application/json; chartset=utf-8",
+                    success: function (data) {
+                        chartData = data;
+                    },
+                    error: function (jqXHR,textStatus,errorThrown) {
+                        alert("Error loading data! Please try again.");
+                        console.log(textStatus);
+                        debugger;
+                    }
+                }).done(function () {
+                    // after complete loading data
+                    google.setOnLoadCallback(drawChart);
+                    drawChart();
+                });
+            });
+
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable(chartData);
+
+            var options = {
+                title: "Время работы различных должностей",
+                pointSize: 5
+            };
+
+            var barChart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            barChart.draw(data, options);
+
+        }
+
+    </script>
+
+
+      <div id="chart_div" style="width:600px;height:400px">
+      
+
+    </div>
+
+
 </asp:Content>

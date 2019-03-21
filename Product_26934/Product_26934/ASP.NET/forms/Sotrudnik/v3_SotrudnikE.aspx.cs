@@ -5,7 +5,7 @@ namespace IIS.Product_26934
     using ICSSoft.STORMNET;
     using ICSSoft.STORMNET.Web.Controls;
     using ICSSoft.STORMNET.Web.AjaxControls;
-    
+
     public partial class v3_СотрудникE : BaseEditForm<Сотрудник>
     {
         /// <summary>

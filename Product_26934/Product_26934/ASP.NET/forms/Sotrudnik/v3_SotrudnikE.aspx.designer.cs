@@ -121,6 +121,24 @@ namespace IIS.Product_26934 {
         protected global::System.Web.UI.WebControls.TextBox ctrlДолжность;
         
         /// <summary>
+        /// ctrlAgentLabel элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ctrlAgentLabel;
+        
+        /// <summary>
+        /// ctrlAgent элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.MasterEditorAjaxDropDown ctrlAgent;
+        
+        /// <summary>
         /// ScriptManager1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -128,6 +146,42 @@ namespace IIS.Product_26934 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// ctrl_fsИстория_окладов элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_окладов;
+        
+        /// <summary>
+        /// ctrlИсторияОкладов элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияОкладов;
+        
+        /// <summary>
+        /// ctrl_fsИстория_руководителей элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_руководителей;
+        
+        /// <summary>
+        /// ctrlИсторияРуководителей элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияРуководителей;
         
         /// <summary>
         /// ctrl_fsРабочие_периоды элемент управления.
@@ -182,41 +236,5 @@ namespace IIS.Product_26934 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlСписокАттестаций;
-        
-        /// <summary>
-        /// ctrl_fsИстория_окладов элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_окладов;
-        
-        /// <summary>
-        /// ctrlИсторияОкладов элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияОкладов;
-        
-        /// <summary>
-        /// ctrl_fsИстория_руководителей элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.ShowHideDiv ctrl_fsИстория_руководителей;
-        
-        /// <summary>
-        /// ctrlИсторияРуководителей элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::ICSSoft.STORMNET.Web.AjaxControls.AjaxGroupEdit ctrlИсторияРуководителей;
     }
 }
