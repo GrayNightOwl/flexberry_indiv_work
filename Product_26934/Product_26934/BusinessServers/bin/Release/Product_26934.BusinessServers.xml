@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product_26934.BusinessServers</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Product_26934.СотрудникБС">
+            <summary>
+            Сотрудник БС.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_26934.РабочийПериодБС">
+            <summary>
+            РабочийПериодБС.
+            </summary>
+        </member>
+    </members>
+</doc>

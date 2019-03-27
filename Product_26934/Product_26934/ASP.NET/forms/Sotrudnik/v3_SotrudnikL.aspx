@@ -56,7 +56,7 @@
             var data = google.visualization.arrayToDataTable(chartData);
 
             var options = {
-                title: "Время работы различных должностей",
+                title: "Время работы различных должностей, дней",
                 pointSize: 5
             };
 
