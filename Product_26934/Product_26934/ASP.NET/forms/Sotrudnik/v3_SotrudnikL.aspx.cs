@@ -41,19 +41,7 @@ namespace IIS.Product_26934
         protected override void Preload()
         {
         }
-
-        //protected class StatusUptimeClass
-        //{
-        //    public List<string> Status = new List<string>();
-        //    public List<TimeSpan> Uptime = new List<TimeSpan>();
-        //}
-
-        //protected class StatusTimeInHour
-        //{
-        //    public string Должность;
-        //    public double СреднееВремяРаботы;
-        //}
-
+            
         /// <summary>
         /// Вызывается самым последним в Page_Load.
         /// </summary>
